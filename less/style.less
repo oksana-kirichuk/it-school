@@ -1,0 +1,96 @@
+// out: ../css/style.css
+
+body {
+    font-size: 16px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headling-second {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #333333;
+}
+
+.headling-third {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4B67B1;
+}
+
+.honor-container {
+    .honor-content {
+        display: flex;
+
+        .honor {
+            padding: 80px 60px;
+            width: 33%;
+            text-align: center;
+
+            h3 {
+               .headling-third;
+               color: #fff; 
+               padding: 25px 0;
+            }
+
+            p {
+                line-height: 22px;
+                color: #fff;
+            }
+            
+            &.courses {
+                background: #4B67B1;
+            }
+    
+            &.students {
+                background: #383FA8;
+            }
+    
+            &.experience {
+                background: #2B4177;
+            }
+        }
+    }
+}
+
+.advantages {
+    .advantages-container {
+        .advantages-title {
+            h2 {
+                .headling-second;
+                margin: 80px 0;
+            }
+        }
+        .advantages-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .advantages-item {
+                display: flex;
+                width: 45%;
+                margin-bottom: 30px;
+                margin-right: 60px;
+
+                .adv-image {
+                    margin-right: 30px;
+                }
+
+                .adv-description {
+                    h3 {
+                        .headling-third;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

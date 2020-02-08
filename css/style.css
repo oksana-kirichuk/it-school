@@ -1,0 +1,78 @@
+body {
+  font-size: 16px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.headling-second {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #333333;
+}
+.headling-third {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4B67B1;
+}
+.honor-container .honor-content {
+  display: flex;
+}
+.honor-container .honor-content .honor {
+  padding: 80px 60px;
+  width: 33%;
+  text-align: center;
+}
+.honor-container .honor-content .honor h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4B67B1;
+  color: #fff;
+  padding: 25px 0;
+}
+.honor-container .honor-content .honor p {
+  line-height: 22px;
+  color: #fff;
+}
+.honor-container .honor-content .honor.courses {
+  background: #4B67B1;
+}
+.honor-container .honor-content .honor.students {
+  background: #383FA8;
+}
+.honor-container .honor-content .honor.experience {
+  background: #2B4177;
+}
+.advantages .advantages-container .advantages-title h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #333333;
+  margin: 80px 0;
+}
+.advantages .advantages-container .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages .advantages-container .advantages-list .advantages-item {
+  display: flex;
+  width: 45%;
+  margin-bottom: 30px;
+  margin-right: 60px;
+}
+.advantages .advantages-container .advantages-list .advantages-item .adv-image {
+  margin-right: 30px;
+}
+.advantages .advantages-container .advantages-list .advantages-item .adv-description h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4B67B1;
+  margin-bottom: 20px;
+}
+.advantages .advantages-container .advantages-list .advantages-item .adv-description p {
+  line-height: 22px;
+}
