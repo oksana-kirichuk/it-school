@@ -86,6 +86,7 @@ body {
 .reviews .reviews-container .reviews-slider {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content {
   width: 25%;
