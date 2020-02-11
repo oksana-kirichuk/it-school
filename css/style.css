@@ -17,6 +17,122 @@ body {
   line-height: 28px;
   color: #4B67B1;
 }
+.menu-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 50px 0;
+}
+.menu-fixed .menu-fixed-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-fixed .menu-fixed-container .menu-logo {
+  display: flex;
+  align-items: center;
+}
+.menu-fixed .menu-fixed-container .menu-logo .menu-logo-image {
+  margin-right: 15px;
+}
+.menu-fixed .menu-fixed-container .menu-logo .menu-logo-text p {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.menu-fixed .menu-fixed-container .menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.menu-fixed .menu-fixed-container .menu li:last-child {
+  margin-right: 0;
+}
+.menu-fixed .menu-fixed-container .menu li a {
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+.menu-fixed .menu-fixed-container .language select {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.menu-fixed .menu-fixed-container .numbers .number-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.menu-fixed .menu-fixed-container .numbers .number-block:last-child {
+  margin-bottom: 0;
+}
+.menu-fixed .menu-fixed-container .numbers .number-block .number-icon {
+  margin-right: 5px;
+}
+.menu-fixed .menu-fixed-container .numbers .number-block .number-icon img {
+  width: 18px;
+}
+.menu-fixed .menu-fixed-container .numbers .number-block .number-item p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+header {
+  background-image: url(../img/bg.png);
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .header-container .header-title {
+  margin-bottom: 75px;
+}
+header .header-container .header-title h1 {
+  font-weight: 900;
+  font-size: 72px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+header .header-container .header-title p {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+header .header-container .header-buttons {
+  text-align: center;
+}
+header .header-container .header-buttons .header-btn {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+header .header-container .header-buttons .header-btn.blue-btn {
+  color: #fff;
+  margin-right: 28px;
+  padding: 25px 28px;
+  background: #4B67B1;
+  border: none;
+}
+header .header-container .header-buttons .header-btn.trans-btn {
+  border: 3px solid #FFFFFF;
+  background: transparent;
+  padding: 20px 74px;
+  box-sizing: border-box;
+}
+header .header-container .slogan {
+  margin-top: 100px;
+  text-align: center;
+}
 .honor-container .honor-content {
   display: flex;
 }

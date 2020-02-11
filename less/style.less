@@ -4,10 +4,14 @@ body {
     font-size: 16px;
 }
 
+// wrapper
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+// mixins less
 
 .headling-second {
     font-weight: bold;
@@ -21,6 +25,180 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #4B67B1;
+}
+
+// main code
+// fixed menu
+
+.menu-fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 50px 0;
+
+    .menu-fixed-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .menu-logo {
+            display: flex;
+            align-items: center;
+    
+            .menu-logo-image {
+                margin-right: 15px;
+
+                img {
+    
+                }
+            }
+    
+            .menu-logo-text {
+                p {
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+    
+        .menu {
+            li {
+                display: inline-block;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+    
+                a {
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+    
+        .language {
+
+            label {
+    
+            }
+            select {
+                background: transparent;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+
+                option {
+                }
+            }
+        }
+
+        .numbers {
+            .number-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .number-icon {
+                    margin-right: 5px;
+
+                    img {
+                        width: 18px;
+                    }
+                }
+
+                .number-item {
+                    p {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header
+
+header {
+    background-image: url(../img/bg.png);
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    .header-container {
+        .header-social {
+            span {
+
+            }
+        }
+
+        .header-title {
+            margin-bottom: 75px;
+
+            h1 {
+                font-weight: 900;
+                font-size: 72px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+
+            p {
+                text-align: center;
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+
+        .header-buttons {
+            text-align: center;
+
+            .header-btn {
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                box-sizing: border-box;
+                border-radius: 40px;
+
+                &.blue-btn {
+                    color: #fff;
+                    margin-right: 28px;
+                    padding: 25px 28px;
+                    background: #4B67B1;
+                    border: none;
+                }
+    
+                &.trans-btn {
+                    border: 3px solid #FFFFFF;
+                    background: transparent;
+                    padding: 20px 74px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        .slogan {
+            margin-top: 100px;
+            text-align: center;
+        }
+    }
 }
 
 .honor-container {
