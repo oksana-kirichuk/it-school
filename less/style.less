@@ -120,9 +120,11 @@ body {
 }
 
 .reviews {
+    padding-bottom: 150px;
+
     .reviews-container {
         .reviews-title {
-            margin-bottom: 40px;
+            margin-bottom: 80px;
             
             &::after {
                 content: '';
@@ -143,10 +145,12 @@ body {
 
         .reviews-slider {
             display: flex;
+            padding: 0 50px;
+            justify-content: space-around;
 
             .reviews-slider-content {
-                width: 30% !important;
-                margin-right: 70px;
+                margin-right: 50px;
+                width: 20% !important;
 
                 &:last-child {
                     margin-right: 0;
@@ -226,10 +230,12 @@ footer {
         display: flex;
 
         .footer-menu {
+            width: 33%;
+            
             .footer-logo {
                 display: flex;
                 align-items: center;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
 
                 .footer-logo-image {
                     margin-right: 20px;
@@ -265,7 +271,83 @@ footer {
         }
 
         .footer-contacts {
-            
+            width: 28%;
+
+            .footer-contacts-title {
+                margin-bottom: 30px;
+
+                h3 {
+                    .headling-third;
+                    color: #fff;
+                }
+            }
+
+            .footer-block {
+                display: flex;
+                margin-bottom: 20px;
+
+                &.social-icons {
+                    span {
+                        color: #fff;
+                        font-size: 18px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .contacts-icons {
+                    margin-right: 15px;
+
+                    span {
+                        color: #fff;
+                    }
+                }
+                .footer-block-text {
+                    p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #fff;
+                        line-height: 20px;
+                    }
+                }
+            }
         }
+
+        .footer-technologies {
+            width: 38%;
+
+            .footer-tech-title {
+                margin-bottom: 30px;
+
+                h3 {
+                    .headling-third;
+                    color: #fff;
+                }
+            }
+
+            .tech-items {
+                span {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 8px 14px;
+                    background: #8195c8;
+                    border-radius: 30px;
+                    margin-bottom: 8px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background: #3B4F83;
+    padding: 8px 0;
+
+    p {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
     }
 }

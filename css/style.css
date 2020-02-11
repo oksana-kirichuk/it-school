@@ -97,8 +97,11 @@ body {
 .advantages .advantages-container .advantages-list .advantages-item .adv-description p {
   line-height: 22px;
 }
+.reviews {
+  padding-bottom: 150px;
+}
 .reviews .reviews-container .reviews-title {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .reviews .reviews-container .reviews-title::after {
   content: '';
@@ -119,10 +122,12 @@ body {
 }
 .reviews .reviews-container .reviews-slider {
   display: flex;
+  padding: 0 50px;
+  justify-content: space-around;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content {
-  width: 30% !important;
-  margin-right: 70px;
+  margin-right: 50px;
+  width: 20% !important;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content:last-child {
   margin-right: 0;
@@ -172,10 +177,13 @@ footer .footer-container {
   padding: 50px 0;
   display: flex;
 }
+footer .footer-container .footer-menu {
+  width: 33%;
+}
 footer .footer-container .footer-menu .footer-logo {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 footer .footer-container .footer-menu .footer-logo .footer-logo-image {
   margin-right: 20px;
@@ -196,4 +204,71 @@ footer .footer-container .footer-menu .footer-links a {
   color: #fff;
   cursor: pointer;
   margin-bottom: 20px;
+}
+footer .footer-container .footer-contacts {
+  width: 28%;
+}
+footer .footer-container .footer-contacts .footer-contacts-title {
+  margin-bottom: 30px;
+}
+footer .footer-container .footer-contacts .footer-contacts-title h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4B67B1;
+  color: #fff;
+}
+footer .footer-container .footer-contacts .footer-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer .footer-container .footer-contacts .footer-block.social-icons span {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+footer .footer-container .footer-contacts .footer-block .contacts-icons {
+  margin-right: 15px;
+}
+footer .footer-container .footer-contacts .footer-block .contacts-icons span {
+  color: #fff;
+}
+footer .footer-container .footer-contacts .footer-block .footer-block-text p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+}
+footer .footer-container .footer-technologies {
+  width: 38%;
+}
+footer .footer-container .footer-technologies .footer-tech-title {
+  margin-bottom: 30px;
+}
+footer .footer-container .footer-technologies .footer-tech-title h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4B67B1;
+  color: #fff;
+}
+footer .footer-container .footer-technologies .tech-items span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  background: #8195c8;
+  border-radius: 30px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.copyright {
+  background: #3B4F83;
+  padding: 8px 0;
+}
+.copyright p {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
 }

@@ -5,9 +5,11 @@
   transform: rotate(-90deg) !important;
   box-sizing: border-box;
 }
+
 .reviews-slider .slick-dots li {
   padding: 5px;
 }
+
 .reviews-slider .slick-dots li button {
   border-radius: 100%;
   border: none;
@@ -23,15 +25,18 @@
   height: 10px;
   cursor: pointer;
 }
+
 .reviews-slider .slick-dots li.slick-active button {
   color: #4B67B1;
   background-color: #4B67B1;
 }
+
 .reviews-slider .slider-arrows {
   font-size: 2rem;
   color: #4B67B1;
   z-index: 200;
 }
+
 .reviews-slider .slick-prev {
   color: #4B67B1;
   z-index: 100;
@@ -51,6 +56,7 @@
   opacity: 0.6;
   font-size: 0;
 }
+
 .reviews-slider .slick-next {
   color: #4B67B1;
   z-index: 100;
