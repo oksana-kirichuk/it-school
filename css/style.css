@@ -25,6 +25,10 @@ body {
   width: 33%;
   text-align: center;
 }
+.honor-container .honor-content .honor span {
+  color: #fff;
+  font-size: 50px;
+}
 .honor-container .honor-content .honor h3 {
   font-weight: bold;
   font-size: 24px;
@@ -46,12 +50,25 @@ body {
 .honor-container .honor-content .honor.experience {
   background: #2B4177;
 }
+.advantages .advantages-container .advantages-title {
+  margin-bottom: 40px;
+}
+.advantages .advantages-container .advantages-title::after {
+  content: '';
+  display: block;
+  width: 12%;
+  right: 0;
+  height: 6px;
+  background-color: #4B67B1;
+  margin-top: 4px;
+  cursor: pointer;
+}
 .advantages .advantages-container .advantages-title h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 47px;
   color: #333333;
-  margin: 80px 0;
+  margin: 80px 0 20px 0;
 }
 .advantages .advantages-container .advantages-list {
   display: flex;
@@ -66,6 +83,10 @@ body {
 .advantages .advantages-container .advantages-list .advantages-item .adv-image {
   margin-right: 30px;
 }
+.advantages .advantages-container .advantages-list .advantages-item .adv-image span {
+  color: #4B67B1;
+  font-size: 40px;
+}
 .advantages .advantages-container .advantages-list .advantages-item .adv-description h3 {
   font-weight: bold;
   font-size: 24px;
@@ -76,20 +97,31 @@ body {
 .advantages .advantages-container .advantages-list .advantages-item .adv-description p {
   line-height: 22px;
 }
+.reviews .reviews-container .reviews-title {
+  margin-bottom: 40px;
+}
+.reviews .reviews-container .reviews-title::after {
+  content: '';
+  display: block;
+  width: 12%;
+  right: 0;
+  height: 6px;
+  background-color: #4B67B1;
+  margin-top: 4px;
+  cursor: pointer;
+}
 .reviews .reviews-container .reviews-title h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 47px;
   color: #333333;
-  padding-bottom: 80px;
+  margin: 80px 0 20px 0;
 }
 .reviews .reviews-container .reviews-slider {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content {
-  width: 25%;
+  width: 30% !important;
   margin-right: 70px;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content:last-child {
@@ -105,7 +137,7 @@ body {
   font-weight: bold;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content .review-top .review-name p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
   color: #BDBDBD;
 }
@@ -116,4 +148,52 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #4F4F4F;
+}
+.partners {
+  padding: 50px 0;
+}
+.partners .partners-container .partners-title h3 {
+  color: #a5a5a5;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.partners .partners-container .partners-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+footer {
+  background: #4B67B1;
+}
+footer .footer-container {
+  padding: 50px 0;
+  display: flex;
+}
+footer .footer-container .footer-menu .footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+footer .footer-container .footer-menu .footer-logo .footer-logo-image {
+  margin-right: 20px;
+}
+footer .footer-container .footer-menu .footer-logo .footer-logo-name h5 {
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+footer .footer-container .footer-menu .footer-logo .footer-logo-name p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+footer .footer-container .footer-menu .footer-links a {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
 }

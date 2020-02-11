@@ -1,14 +1,14 @@
-.slider-container .slick-dots {
+.reviews-slider .slick-dots {
   position: absolute;
   bottom: 0;
   right: 48%;
   transform: rotate(-90deg) !important;
   box-sizing: border-box;
 }
-.slider-container .slick-dots li {
+.reviews-slider .slick-dots li {
   padding: 5px;
 }
-.slider-container .slick-dots li button {
+.reviews-slider .slick-dots li button {
   border-radius: 100%;
   border: none;
   color: #fff;
@@ -17,18 +17,23 @@
   height: 15px;
   width: 15px;
   outline: none;
+  border: 2px solid #E0E0E0;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
 }
-.slider-container .slick-dots li.slick-active button {
-  color: #03e9af;
-  background-color: #03e9af;
+.reviews-slider .slick-dots li.slick-active button {
+  color: #4B67B1;
+  background-color: #4B67B1;
 }
-.slider-container .slider-arrows {
+.reviews-slider .slider-arrows {
   font-size: 2rem;
-  color: #fff;
+  color: #4B67B1;
   z-index: 200;
 }
-.slider-container .slick-prev {
-  color: #fff;
+.reviews-slider .slick-prev {
+  color: #4B67B1;
   z-index: 100;
   width: 24px;
   height: 24px;
@@ -39,15 +44,15 @@
   outline: none;
   top: 50%;
   margin-top: -31px;
-  border-bottom: 5px solid #fff;
-  border-left: 5px solid #fff;
+  border-bottom: 5px solid #4B67B1;
+  border-left: 5px solid #4B67B1;
   transform: rotate(45deg);
   left: 20px;
   opacity: 0.6;
   font-size: 0;
 }
-.slider-container .slick-next {
-  color: #fff;
+.reviews-slider .slick-next {
+  color: #4B67B1;
   z-index: 100;
   width: 24px;
   height: 24px;

@@ -32,6 +32,11 @@ body {
             width: 33%;
             text-align: center;
 
+            span {
+                color: #fff;
+                font-size: 50px;
+            }
+
             h3 {
                .headling-third;
                color: #fff; 
@@ -61,11 +66,25 @@ body {
 .advantages {
     .advantages-container {
         .advantages-title {
+            margin-bottom: 40px;
+            
+            &::after {
+                content: '';
+                display: block;
+                width: 12%;
+                right: 0;
+                height: 6px;
+                background-color: #4B67B1;;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+        
             h2 {
                 .headling-second;
-                margin: 80px 0;
+                margin: 80px 0 20px 0;
             }
         }
+
         .advantages-list {
             display: flex;
             flex-wrap: wrap;
@@ -78,6 +97,11 @@ body {
 
                 .adv-image {
                     margin-right: 30px;
+
+                    span {
+                        color: #4B67B1;
+                        font-size: 40px;
+                    }
                 }
 
                 .adv-description {
@@ -98,19 +122,30 @@ body {
 .reviews {
     .reviews-container {
         .reviews-title {
+            margin-bottom: 40px;
+            
+            &::after {
+                content: '';
+                display: block;
+                width: 12%;
+                right: 0;
+                height: 6px;
+                background-color: #4B67B1;;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+
             h2 {
                 .headling-second;
-                padding-bottom: 80px;
+                margin: 80px 0 20px 0;
             }
         }
 
         .reviews-slider {
             display: flex;
-            flex-wrap: wrap;
-            width: 100%;
 
             .reviews-slider-content {
-                width: 25%;
+                width: 30% !important;
                 margin-right: 70px;
 
                 &:last-child {
@@ -133,7 +168,7 @@ body {
                         }
 
                         p {
-                            font-size: 24px;
+                            font-size: 20px;
                             line-height: 30px;
                             color: #BDBDBD;
                         }
@@ -150,6 +185,87 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+.partners {
+    padding: 50px 0;
+
+    .partners-container {
+        .partners-title {
+            h3 {
+                color: rgb(165, 165, 165);
+                font-weight: 900;
+                font-size: 40px;
+                line-height: 47px;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+        }
+        
+        .partners-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            .partner-item {
+                img {
+
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #4B67B1;
+
+    .footer-container {
+        padding: 50px 0;
+        display: flex;
+
+        .footer-menu {
+            .footer-logo {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+
+                .footer-logo-image {
+                    margin-right: 20px;
+
+                    img {
+
+                    }
+                }
+                .footer-logo-name {
+                    h5 {
+                        font-weight: bold;
+                        line-height: 24px;
+                        color: #fff;
+                        letter-spacing: 0.05em;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .footer-links {
+                a {
+                    display: block;
+                    color: #fff;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .footer-contacts {
+            
         }
     }
 }
