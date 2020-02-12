@@ -133,6 +133,70 @@ header .header-container .slogan {
   margin-top: 100px;
   text-align: center;
 }
+.courses {
+  padding-bottom: 200px;
+}
+.courses .courses-container .courses-links {
+  padding: 30px 0 60px 0;
+}
+.courses .courses-container .courses-links .courses-prof {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #333333;
+  color: #4B67B1;
+  margin-right: 70px;
+  cursor: pointer;
+}
+.courses .courses-container .courses-links .courses-kids {
+  font-size: 24px;
+  color: #C4C4C4;
+  cursor: pointer;
+}
+.courses .courses-container .courses-content .courses-block .courses-main-title {
+  margin-bottom: 30px;
+}
+.courses .courses-container .courses-content .courses-block .courses-main-title h3 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #333333;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item {
+  width: 20%;
+  box-sizing: border-box;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-bg {
+  width: 200px;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content {
+  padding-bottom: 20px;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content.block-light-blue {
+  background: #4B67B1;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-title {
+  margin-bottom: 20px;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-title h4 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date .descr-icon {
+  margin-right: 5px;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date .descr-icon span {
+  font-size: 16px;
+  color: #fff;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date .course-text p {
+  font-size: 16px;
+  color: #fff;
+}
 .honor-container .honor-content {
   display: flex;
 }
