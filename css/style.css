@@ -133,11 +133,8 @@ header .header-container .slogan {
   margin-top: 100px;
   text-align: center;
 }
-.courses {
-  padding-bottom: 200px;
-}
 .courses .courses-container .courses-links {
-  padding: 30px 0 60px 0;
+  padding: 50px 0 100px 0;
 }
 .courses .courses-container .courses-links .courses-prof {
   font-weight: bold;
@@ -154,28 +151,69 @@ header .header-container .slogan {
   cursor: pointer;
 }
 .courses .courses-container .courses-content .courses-block .courses-main-title {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.courses .courses-container .courses-content .courses-block .courses-main-title span {
+  color: #4B67B1;
+  font-size: 36px;
+  margin-right: 8px;
 }
 .courses .courses-container .courses-content .courses-block .courses-main-title h3 {
   font-weight: bold;
   font-size: 36px;
   color: #333333;
+  display: inline-block;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item {
-  width: 20%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 22%;
   box-sizing: border-box;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-bg {
-  width: 200px;
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .block-bg {
+  position: relative;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .block-bg .course-block-bg {
+  height: 110px;
+  width: 100%;
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .block-bg .course-logo {
+  position: absolute;
+  z-index: 300;
+  top: 70%;
+  left: 7%;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .block-bg .course-block-extra {
+  height: 50px;
+  width: 100%;
+  clip-path: polygon(0 44%, 100% 0%, 100% 63%, 0 65%);
+  position: absolute;
+  top: 81%;
+  left: 0;
+  z-index: 200;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .block-bg .course-block-extra.block-light-blue {
+  background: #4B67B1;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content {
-  padding-bottom: 20px;
+  padding: 50px 0 20px 20px;
+  box-sizing: border-box;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content.block-light-blue {
   background: #4B67B1;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  min-height: 60px;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-title h4 {
   font-weight: 500;
@@ -187,7 +225,7 @@ header .header-container .slogan {
   margin-bottom: 10px;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date .descr-icon {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date .descr-icon span {
   font-size: 16px;
@@ -195,6 +233,15 @@ header .header-container .slogan {
 }
 .courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-content .course-block-descr .course-date .course-text p {
   font-size: 16px;
+  color: #fff;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-footer {
+  background: #2B4177;
+  padding: 16px 22px;
+}
+.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-footer p {
+  font-weight: 500;
+  font-size: 24px;
   color: #fff;
 }
 .honor-container .honor-content {

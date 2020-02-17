@@ -202,11 +202,9 @@ header {
 }
 
 .courses {
-    padding-bottom: 200px;
-
     .courses-container {
         .courses-links {
-            padding: 30px 0 60px 0;
+            padding: 50px 0 100px 0;
 
             .courses-prof {
                 .headling-second;
@@ -225,36 +223,84 @@ header {
         .courses-content {
             .courses-block {
                 .courses-main-title {
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
+
+                    span {
+                        color: #4B67B1;
+                        font-size: 36px;
+                        margin-right: 8px;
+                    }
 
                     h3 {
                         font-weight: bold;
                         font-size: 36px;
                         color: #333333;
+                        display: inline-block;
                     }
                 }
                 .courses-block-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 50px;
+
                     .course-block-item {
-                        width: 20%;
+                        margin-right: 20px;
+                        margin-bottom: 30px;
+                        width: 22%;
                         box-sizing: border-box;
+                        // position: relative;
 
-                        .course-block-bg {
-                            width: 200px;
-                        }
+                        .block-bg {
+                            position: relative;
 
-                        .course-block-extra {
+                            .course-block-bg {
+                                height: 110px;
+                                width: 100%;
+                                padding-top: 50px;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                // position: absolute;
+                                // top: 0;
+                                // left: 0;
+                                // z-index: 200;
+                                // clip-path: polygon(0 0, 100% 0, 100% 41%, 0 52%);
+                            }
 
+                            .course-logo {
+                                position: absolute;
+                                z-index: 300;
+                                top: 70%;
+                                left: 7%;
+                            }
+    
+                            .course-block-extra {
+                                height: 50px;
+                                width: 100%;
+                                clip-path: polygon(0 44%, 100% 0%, 100% 63%, 0 65%);
+                                position: absolute;
+                                top: 81%;
+                                left: 0;
+                                z-index: 200;
+
+                                &.block-light-blue {
+                                    background: #4B67B1;
+                                }
+                            }
                         }
 
                         .course-block-content {
-                            padding-bottom: 20px;
+                            padding: 50px 0 20px 20px;
+                           
+                            box-sizing: border-box;
 
                             &.block-light-blue {
                                 background: #4B67B1;
                             }
 
                             .course-block-title {
-                                margin-bottom: 20px;
+                                margin-bottom: 40px;
+                                min-height: 60px;
 
                                 h4 {
                                     font-weight: 500;
@@ -268,7 +314,7 @@ header {
                                     margin-bottom: 10px;
 
                                     .descr-icon {
-                                        margin-right: 5px;
+                                        margin-right: 10px;
 
                                         span {
                                             font-size: 16px;
@@ -283,6 +329,17 @@ header {
                                         }
                                     }
                                 }
+                            }
+                        }
+
+                        .course-block-footer {
+                            background: #2B4177;
+                            padding: 16px 22px;
+                            
+                            p {
+                                font-weight: 500;
+                                font-size: 24px;
+                                color: #fff;
                             }
                         }
                     }
