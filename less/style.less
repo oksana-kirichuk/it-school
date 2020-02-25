@@ -36,7 +36,9 @@ body {
     left: 0;
     z-index: 100;
     width: 100%;
-    padding: 50px 0;
+    padding: 45px 0;
+
+    
 
     .menu-fixed-container {
         display: flex;
@@ -130,7 +132,7 @@ body {
 
 // header
 
-header {
+.main-header {
     background-image: url(../img/bg.png);
     padding: 200px 0;
     background-repeat: no-repeat;
@@ -308,6 +310,7 @@ header {
                                     color: #fff;
                                 }
                             }
+                            
                             .course-block-descr {
                                 .course-date {
                                     display: flex;
@@ -655,7 +658,6 @@ footer {
                 span {
                     color: #fff;
                     font-size: 14px;
-                    font-weight: 600;
                     padding: 8px 14px;
                     background: #8195c8;
                     border-radius: 30px;
@@ -675,6 +677,136 @@ footer {
         font-size: 14px;
         color: #fff;
         text-align: center;
+    }
+}
+
+// course.html
+
+.course-header {
+    background: linear-gradient(136.81deg, #3D589F 7.54%, #4B67B1 65.37%);
+    padding: 160px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        right: 0;
+        height: 0.5px;
+        background-color: #fff;
+    }
+    
+    
+
+    .course-header-container {
+        display: flex;
+        padding-top: 20px;
+
+        .course-header-text {
+            width: 60%;
+            margin-right: 30px;
+
+            .course-header-title {
+                margin-bottom: 75px;
+                margin-top: 50px;
+
+                .course-header-headling {
+                    h1 {
+                        font-weight: 900;
+                        font-size: 52px;
+                        color: #fff;
+                        margin-bottom: 25px;
+                        box-sizing: border-box;
+                        line-height: 84px;
+                    }
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 125px;
+                        right: 0;
+                        height: 1px;
+                        background-color: #fff;
+                    }
+                }
+    
+                p {
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-top: 26px;
+                }
+            }
+    
+            .course-header-buttons {
+                .header-btn {
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: center;
+                    cursor: pointer;
+                    outline: none;
+                    color: #fff;
+                    box-sizing: border-box;
+                    border-radius: 40px;
+    
+                    &.yellow-btn {
+                        color: #fff;
+                        margin-right: 25px;
+                        padding: 25px 50px;
+                        background: #F0C012;;
+                        border: none;
+                    }
+        
+                    &.trans-btn {
+                        border: 3px solid #FFFFFF;
+                        background: transparent;
+                        padding: 20px 70px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+
+        .course-header-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.about-course {
+    padding: 80px 0;
+
+    .about-course-container {
+        display: flex;
+
+        .about-course-item {
+            width: 25%;
+            box-sizing: border-box;
+            text-align: center;
+
+            .about-icon {
+               margin-bottom: 20px;
+
+                span {
+                    color: #4B67B1;
+                    font-size: 64px;
+                }
+            }
+            .about-descr {
+                .about-descr-text {
+                    font-size: 24px;
+                    line-height: 30px;
+
+                    &.blue-text {
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
