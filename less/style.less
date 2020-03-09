@@ -703,6 +703,10 @@ footer {
     background-position: center;
     background-size: cover;
 
+    &.light-blue-header {
+        background: linear-gradient(136.81deg, #499FAB 7.54%, #5FBFCD 65.37%);
+    }
+
     &::before {
         content: '';
         display: block;
@@ -915,12 +919,113 @@ footer {
 
     .overview {
         padding-bottom: 150px;
-    }
+    
 
         .overview-cards {
             display: flex;
             width: 100%;
         }
+    }
+}
+
+// accordeon
+
+.programm-course-container {
+    .programm-course {
+        .accordeon-container {
+            .accordeon-set {
+                .accordeon-set-name {
+                    display: flex;
+                    align-items: flex-end;
+                    padding-bottom: 28px;
+
+                    img {
+
+                    }
+
+                    a {
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 35px;
+                        color: #333;
+                        padding-left: 16px;
+                        padding-top: 24px;
+
+                        span {
+
+                        }
+                    }
+                }
+
+                .accordeon-set-content {
+                    .set-title {
+                        h4 {
+                            .headling-third;
+                            color: #333;
+                            padding-bottom: 44px;
+                        }
+                    }
+
+                    .set-content {
+                        display: flex;
+
+                        .set-content-left-bar {
+                            .knowledge {
+                                span {
+                                    color: #4B67B1;
+                                    padding-right: 18px;
+                                    font-size: 24px;
+                                }
+
+                                .know-text {
+                                    font-size: 24px;
+                                    line-height: 40px;
+                                    color: #333;
+                                }
+                            } 
+                        }
+
+                        .set-content-right-bar {
+                            .course-time {
+                                border-bottom: 1px solid #E0E0E0;
+                                
+                                span {
+                                    font-size: 18px;
+                                    line-height: 42px;
+                                    padding-right: 8px;
+                                    color: #828282;
+                                }
+                            }
+
+                            .course-skills {
+                                padding-top: 33px;
+
+                                h4 {
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    color: #333;
+                                    padding-bottom: 26px;
+                                }
+
+                                ul {
+                                    padding-left: 30px;
+
+                                    li {
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        color: #333;
+                                        padding-bottom: 20px;
+                                        list-style-type: disc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 

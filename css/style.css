@@ -517,6 +517,9 @@ footer .footer-container .footer-technologies .tech-items span {
   background-position: center;
   background-size: cover;
 }
+.course-header.light-blue-header {
+  background: linear-gradient(136.81deg, #499FAB 7.54%, #5FBFCD 65.37%);
+}
 .course-header::before {
   content: '';
   display: block;
@@ -663,7 +666,70 @@ footer .footer-container .footer-technologies .tech-items span {
 .overview-container .overview {
   padding-bottom: 150px;
 }
-.overview-container .overview-cards {
+.overview-container .overview .overview-cards {
   display: flex;
   width: 100%;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-name {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 28px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-name a {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #333;
+  padding-left: 16px;
+  padding-top: 24px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-title h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4B67B1;
+  color: #333;
+  padding-bottom: 44px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content {
+  display: flex;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-left-bar .knowledge span {
+  color: #4B67B1;
+  padding-right: 18px;
+  font-size: 24px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-left-bar .knowledge .know-text {
+  font-size: 24px;
+  line-height: 40px;
+  color: #333;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-right-bar .course-time {
+  border-bottom: 1px solid #E0E0E0;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-right-bar .course-time span {
+  font-size: 18px;
+  line-height: 42px;
+  padding-right: 8px;
+  color: #828282;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-right-bar .course-skills {
+  padding-top: 33px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-right-bar .course-skills h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  padding-bottom: 26px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-right-bar .course-skills ul {
+  padding-left: 30px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-right-bar .course-skills ul li {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  padding-bottom: 20px;
+  list-style-type: disc;
 }
