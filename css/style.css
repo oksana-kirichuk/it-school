@@ -412,6 +412,12 @@ body {
 footer {
   background: #4B67B1;
 }
+footer.light-blue-footer {
+  background: linear-gradient(136.81deg, #499FAB 7.54%, #5FBFCD 65.37%);
+}
+footer.children-footer {
+  background: linear-gradient(137deg, #743BA0 7.7%, #6B00BE 65.44%);
+}
 footer .footer-container {
   padding: 50px 0;
   display: flex;
@@ -519,6 +525,9 @@ footer .footer-container .footer-technologies .tech-items span {
 }
 .course-header.light-blue-header {
   background: linear-gradient(136.81deg, #499FAB 7.54%, #5FBFCD 65.37%);
+}
+.course-header.children-header {
+  background: linear-gradient(137deg, #743BA0 7.7%, #6B00BE 65.44%);
 }
 .course-header::before {
   content: '';
