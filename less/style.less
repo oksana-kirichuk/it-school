@@ -142,8 +142,14 @@ body {
 
     .header-container {
         .header-social {
-            span {
+            text-align: center;
+            margin-bottom: 30px;
 
+            span {
+                color: #fff;
+                font-size: 42px;
+                margin-right: 50px;
+                cursor: pointer;
             }
         }
 
@@ -213,6 +219,8 @@ body {
                 color: #4B67B1;
                 margin-right: 70px;
                 cursor: pointer;
+                border-bottom: 2px solid #4B67B1;
+                padding-bottom: 15px;
             }
 
             .courses-kids {
@@ -245,109 +253,113 @@ body {
                     flex-wrap: wrap;
                     margin-bottom: 50px;
 
-                    .course-block-item {
-                        margin-right: 20px;
-                        margin-bottom: 30px;
-                        width: 22%;
-                        box-sizing: border-box;
-                        // position: relative;
+                    
+                }
+            }
+        }
+    }
+}
 
-                        .block-bg {
-                            position: relative;
+// cards items
 
-                            .course-block-bg {
-                                height: 110px;
-                                width: 100%;
-                                padding-top: 50px;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover;
-                                // position: absolute;
-                                // top: 0;
-                                // left: 0;
-                                // z-index: 200;
-                                // clip-path: polygon(0 0, 100% 0, 100% 41%, 0 52%);
-                            }
+.course-block-item {
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 22%;
+    box-sizing: border-box;
+    // position: relative;
 
-                            .course-logo {
-                                position: absolute;
-                                z-index: 300;
-                                top: 70%;
-                                left: 7%;
-                            }
-    
-                            .course-block-extra {
-                                height: 50px;
-                                width: 100%;
-                                clip-path: polygon(0 44%, 100% 0%, 100% 63%, 0 65%);
-                                position: absolute;
-                                top: 81%;
-                                left: 0;
-                                z-index: 200;
+    .block-bg {
+        position: relative;
 
-                                &.block-light-blue {
-                                    background: #4B67B1;
-                                }
-                            }
-                        }
+        .course-block-bg {
+            height: 110px;
+            width: 100%;
+            padding-top: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // z-index: 200;
+            // clip-path: polygon(0 0, 100% 0, 100% 41%, 0 52%);
+        }
 
-                        .course-block-content {
-                            padding: 50px 0 20px 20px;
-                           
-                            box-sizing: border-box;
+        .course-logo {
+            position: absolute;
+            z-index: 300;
+            top: 70%;
+            left: 7%;
+        }
 
-                            &.block-light-blue {
-                                background: #4B67B1;
-                            }
+        .course-block-extra {
+            height: 50px;
+            width: 100%;
+            clip-path: polygon(0 44%, 100% 0%, 100% 63%, 0 65%);
+            position: absolute;
+            top: 81%;
+            left: 0;
+            z-index: 200;
 
-                            .course-block-title {
-                                margin-bottom: 40px;
-                                min-height: 60px;
+            &.block-light-blue {
+                background: #4B67B1;
+            }
+        }
+    }
 
-                                h4 {
-                                    font-weight: 500;
-                                    font-size: 24px;
-                                    color: #fff;
-                                }
-                            }
-                            
-                            .course-block-descr {
-                                .course-date {
-                                    display: flex;
-                                    margin-bottom: 10px;
+    .course-block-content {
+        padding: 50px 0 20px 20px;
+       
+        box-sizing: border-box;
 
-                                    .descr-icon {
-                                        margin-right: 10px;
+        &.block-light-blue {
+            background: #4B67B1;
+        }
 
-                                        span {
-                                            font-size: 16px;
-                                            color: #fff; 
-                                        }
-                                    }
+        .course-block-title {
+            margin-bottom: 40px;
+            min-height: 60px;
 
-                                    .course-text {
-                                        p {
-                                            font-size: 16px;
-                                            color: #fff; 
-                                        }
-                                    }
-                                }
-                            }
-                        }
+            h4 {
+                font-weight: 500;
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+        
+        .course-block-descr {
+            .course-date {
+                display: flex;
+                margin-bottom: 10px;
 
-                        .course-block-footer {
-                            background: #2B4177;
-                            padding: 16px 22px;
-                            
-                            p {
-                                font-weight: 500;
-                                font-size: 24px;
-                                color: #fff;
-                            }
-                        }
+                .descr-icon {
+                    margin-right: 10px;
+
+                    span {
+                        font-size: 16px;
+                        color: #fff; 
+                    }
+                }
+
+                .course-text {
+                    p {
+                        font-size: 16px;
+                        color: #fff; 
                     }
                 }
             }
+        }
+    }
+
+    .course-block-footer {
+        background: #2B4177;
+        padding: 16px 22px;
+        
+        p {
+            font-weight: 500;
+            font-size: 24px;
+            color: #fff;
         }
     }
 }
@@ -392,28 +404,30 @@ body {
     }
 }
 
+// basic h2 title 
+
+.basic-title-container {
+    margin-bottom: 40px;
+    
+    &::after {
+        content: '';
+        display: block;
+        width: 12%;
+        right: 0;
+        height: 6px;
+        background-color: #4B67B1;;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+
+    .basic-h2 {
+        .headling-second;
+        margin: 80px 0 20px 0;
+    }
+}
+
 .advantages {
     .advantages-container {
-        .advantages-title {
-            margin-bottom: 40px;
-            
-            &::after {
-                content: '';
-                display: block;
-                width: 12%;
-                right: 0;
-                height: 6px;
-                background-color: #4B67B1;;
-                margin-top: 4px;
-                cursor: pointer;
-            }
-        
-            h2 {
-                .headling-second;
-                margin: 80px 0 20px 0;
-            }
-        }
-
         .advantages-list {
             display: flex;
             flex-wrap: wrap;
@@ -797,16 +811,119 @@ footer {
                 }
             }
             .about-descr {
-                .about-descr-text {
+                p {
                     font-size: 24px;
                     line-height: 30px;
+                }
 
-                    &.blue-text {
-                        
-                    }
+                .blue-text {
+                    color: rgb(17, 50, 141);
                 }
             }
         }
     }
 }
+
+.course-description-container {
+    padding: 50px 0 100px 0;
+
+    .course-description {
+        display: flex;
+
+        .course-description-text {
+            width: 50%;
+            box-sizing: border-box;
+            margin-right: 80px;
+
+            .course-text-content {
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #4F4F4F;
+                    margin-bottom: 20px;
+                }
+
+                .course-text-bold {
+                    font-size: 14px;
+                }
+
+                .course-check {
+                    color: #EB5757;
+                    font-size: 24px;
+                    margin-right: 8px;
+                }
+
+                .check-text {
+                    font-size: 24px;
+                    color: #4F4F4F;
+                }
+            }
+        }
+        
+        .course-description-image {
+            width: 40%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.course-video-container {
+    .course-video {
+        .iframe {
+        }
+    }
+}
+
+.programm-course-container {
+    .programm-course {}
+}
+
+.collaboration-container {
+    .collaboration {
+       .coll-top {
+           p {
+                font-weight: 500;
+                font-size: 24px;
+                color: #828282;
+           }
+
+           h2 {
+                font-weight: 900;
+                font-size: 40px;
+                line-height: 47px;
+                color: #333333;
+                margin-top: 20px;
+                width: 70%;
+           }
+        } 
+    }
+
+    .collaboration-block {
+        .coll-form {
+            
+        }
+
+        .coll-contacts {
+
+        }
+    }
+}
+
+.overview-container {
+    padding-top: 80px;
+
+    .overview {
+        padding-bottom: 150px;
+    }
+
+        .overview-cards {
+            display: flex;
+            width: 100%;
+        }
+}
+
+
+
+
 
