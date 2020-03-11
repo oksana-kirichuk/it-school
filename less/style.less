@@ -934,6 +934,10 @@ footer {
                 .form-block {
                     padding-bottom: 30px;
 
+                    &:last-child {
+                        padding-bottom: 50px;
+                    }
+
                     .form-labels {
                         font-weight: bold;
                         font-size: 18px;
@@ -950,6 +954,8 @@ footer {
                         display: block;
                         outline: none;
                         margin-top: 12px;
+                        width: 85%;
+                        height: 60px;
                     }
                 }
 
@@ -958,7 +964,7 @@ footer {
                         font-size: 18px;
                         line-height: 21px;
                         color: #333;
-                        padding-right: 40px;
+                        padding: 0 40px 0 10px;
                     }
 
                     input {
@@ -970,7 +976,27 @@ footer {
 
                 .form-btns {
                     .form-btn {
+                        padding: 25px 100px;
+                        background: #E0E0E0;
+                        border-radius: 40px;
+                        color: #fff;
+                        border: none;
+                        outline: none;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 23px;
+                        margin-right: 30px;
+                    }
 
+                    .form-btn-reset {
+                        color: #BDBDBD;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 23px;
+                        border: none;
+                        background: transparent;
+                        display: inline-block;
+                        padding: 25px 100px;
                     }
                 }
             }
@@ -980,7 +1006,7 @@ footer {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            padding: 40px 30px 80px 30px;
+            padding: 40px 30px 50px 30px;
             border-radius: 5px;
 
             .contact-items {
