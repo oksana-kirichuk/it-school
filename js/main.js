@@ -45,13 +45,9 @@
 //     }
 //   });
 
-$('.accordeon-set' > '.accordeon-set-name' > a).click(function(e) {
-    let selector = this.getAttribute('data-accordeon');
+var title = document.querySelector('.set > a');
 
-    if($(selector).hasClass('active')) {
-        $(selector).removeClass('active')
-    }
-})
+console.log(title);
       
   
       
