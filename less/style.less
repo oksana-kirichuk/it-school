@@ -902,6 +902,8 @@ footer {
 }
 
 .collaboration-container {
+    background-color: #f9f9f9;
+
     .collaboration {
        .coll-top {
            p {
@@ -922,35 +924,47 @@ footer {
     }
 
     .collaboration-block {
+        display: flex;
+        padding-top: 100px;
+
         .coll-form {
+            width: 70%;
+
             form {
                 .form-block {
-                    .form-labels {
+                    padding-bottom: 30px;
 
+                    .form-labels {
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #4B67B1;
                     }
 
                     .form-input {
-
+                        padding-top: 12px;
+                        border: 1px solid #E0E0E0;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        background: #fff;
+                        display: block;
+                        outline: none;
+                        margin-top: 12px;
                     }
                 }
 
                 .form-messengers {
                     label {
-
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #333;
+                        padding-right: 40px;
                     }
 
                     input {
-
-                    }
-                }
-
-                .form-text {
-                    label {
-
-                    }
-                    
-                    textarea {
-
+                        padding: 7px;
+                        background-color: #fff;
+                        border: 1px solid #E0E0E0;
                     }
                 }
 
@@ -963,9 +977,19 @@ footer {
         }
 
         .coll-contacts {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 40px 30px 80px 30px;
+            border-radius: 5px;
+
             .contact-items {
-                h4 {
-                    
+                padding-bottom: 45px;
+
+                h3 {
+                    .headling-third;
+                    color: #fff;
+                    padding-bottom: 20px;
                 }
             }
         }
