@@ -633,35 +633,7 @@ footer {
                 }
             }
 
-            .footer-block {
-                display: flex;
-                margin-bottom: 20px;
-
-                &.social-icons {
-                    span {
-                        color: #fff;
-                        font-size: 18px;
-                        margin-right: 20px;
-                        cursor: pointer;
-                    }
-                }
-
-                .contacts-icons {
-                    margin-right: 15px;
-
-                    span {
-                        color: #fff;
-                    }
-                }
-                .footer-block-text {
-                    p {
-                        font-weight: 500;
-                        font-size: 14px;
-                        color: #fff;
-                        line-height: 20px;
-                    }
-                }
-            }
+            
         }
 
         .footer-technologies {
@@ -691,9 +663,43 @@ footer {
     }
 }
 
+.footer-block {
+    display: flex;
+    margin-bottom: 20px;
+
+    &.social-icons {
+        span {
+            color: #fff;
+            font-size: 18px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .contacts-icons {
+        margin-right: 15px;
+
+        span {
+            color: #fff;
+        }
+    }
+    .footer-block-text {
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            color: #fff;
+            line-height: 20px;
+        }
+    }
+}
+
 .copyright {
     background: #3B4F83;
     padding: 8px 0;
+
+    &.children-footer-bottom {
+        background: linear-gradient(177.46deg, #50296E 7.7%, #440575 65.44%);
+    }
 
     p {
         font-size: 14px;
@@ -917,11 +923,51 @@ footer {
 
     .collaboration-block {
         .coll-form {
-            
+            form {
+                .form-block {
+                    .form-labels {
+
+                    }
+
+                    .form-input {
+
+                    }
+                }
+
+                .form-messengers {
+                    label {
+
+                    }
+
+                    input {
+
+                    }
+                }
+
+                .form-text {
+                    label {
+
+                    }
+                    
+                    textarea {
+
+                    }
+                }
+
+                .form-btns {
+                    .form-btn {
+
+                    }
+                }
+            }
         }
 
         .coll-contacts {
-
+            .contact-items {
+                h4 {
+                    
+                }
+            }
         }
     }
 }
@@ -970,6 +1016,12 @@ footer {
                 }
 
                 .accordeon-set-content {
+                    display: none;
+
+                    &.active {
+                        display: block
+                    }
+
                     .set-title {
                         h4 {
                             .headling-third;

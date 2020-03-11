@@ -463,28 +463,6 @@ footer .footer-container .footer-contacts .footer-contacts-title h3 {
   color: #4B67B1;
   color: #fff;
 }
-footer .footer-container .footer-contacts .footer-block {
-  display: flex;
-  margin-bottom: 20px;
-}
-footer .footer-container .footer-contacts .footer-block.social-icons span {
-  color: #fff;
-  font-size: 18px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-footer .footer-container .footer-contacts .footer-block .contacts-icons {
-  margin-right: 15px;
-}
-footer .footer-container .footer-contacts .footer-block .contacts-icons span {
-  color: #fff;
-}
-footer .footer-container .footer-contacts .footer-block .footer-block-text p {
-  font-weight: 500;
-  font-size: 14px;
-  color: #fff;
-  line-height: 20px;
-}
 footer .footer-container .footer-technologies {
   width: 38%;
 }
@@ -507,9 +485,34 @@ footer .footer-container .footer-technologies .tech-items span {
   margin-bottom: 8px;
   display: inline-block;
 }
+.footer-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer-block.social-icons span {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.footer-block .contacts-icons {
+  margin-right: 15px;
+}
+.footer-block .contacts-icons span {
+  color: #fff;
+}
+.footer-block .footer-block-text p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+}
 .copyright {
   background: #3B4F83;
   padding: 8px 0;
+}
+.copyright.children-footer-bottom {
+  background: linear-gradient(177.46deg, #50296E 7.7%, #440575 65.44%);
 }
 .copyright p {
   font-size: 14px;
@@ -691,6 +694,12 @@ footer .footer-container .footer-technologies .tech-items span {
   color: #333;
   padding-left: 16px;
   padding-top: 24px;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content {
+  display: none;
+}
+.programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content.active {
+  display: block;
 }
 .programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-title h4 {
   font-weight: bold;
