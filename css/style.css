@@ -866,14 +866,124 @@ footer .footer-container .footer-technologies .tech-items span {
   border-radius: 10px;
   box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
 }
-.intership {
+.internship {
   padding: 100px 0;
 }
-.intership .internship-container {
+.internship .internship-container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.intership .internship-container .intern-text .intern-text-items p {
+.internship .internship-container .intern-text {
+  margin: -70px 0;
+  width: 50%;
+}
+.internship .internship-container .intern-text .intern-text-items p {
   font-size: 16px;
   line-height: 20px;
   color: #4f4f4f;
+}
+.internship .internship-container .intern-image {
+  padding-left: 80px;
+}
+.graduate {
+  padding: 90px 0;
+  background: #F2F2F2;
+}
+.graduate .graduate-container .graduates-people {
+  display: flex;
+  justify-content: space-around;
+}
+.graduate .graduate-container .graduates-people .graduates-person {
+  width: 20%;
+  text-align: center;
+}
+.graduate .graduate-container .graduates-people .graduates-person img {
+  padding-bottom: 10px;
+}
+.graduate .graduate-container .graduates-people .graduates-person .person-name {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  padding: 5px 0;
+}
+.graduate .graduate-container .graduates-people .graduates-person .person-position {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #828282;
+  padding: 5px 0;
+}
+.graduate .graduate-container .graduates-people .graduates-person .person-location {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #4B67B1;
+  padding: 5px 0;
+}
+.about {
+  padding: 60px 0 100px 0;
+}
+.about .about-container .about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.about .about-container .about-section .about-section-left {
+  width: 50%;
+}
+.about .about-container .about-section .about-section-left.about-section-text .about-text p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+  padding-bottom: 20px;
+}
+.about .about-container .about-section .school-tasks .task-item {
+  display: flex;
+  align-items: baseline;
+}
+.about .about-container .about-section .school-tasks .task-item span {
+  padding-right: 20px;
+  color: #EB5757;
+  font-size: 20px;
+}
+.about .about-container .about-section .school-tasks .task-item p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+  padding-bottom: 20px;
+}
+.about .about-container .about-section .about-section-right {
+  width: 38%;
+}
+.about .about-container .about-section .about-section-right.about-section-text .about-text {
+  padding-bottom: 30px;
+}
+.about .about-container .about-section .about-section-right.about-section-text .about-text p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+}
+.about .about-container .about-section .about-section-right.about-section-text .about-btn {
+  background: #4B67B1;
+  border-radius: 40px;
+  padding: 25px 28px;
+  display: inline-block;
+}
+.about .about-container .about-section .about-section-right.about-section-text .about-btn a {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.about .about-container .about-section.about-section-image img {
+  width: 556px;
 }
