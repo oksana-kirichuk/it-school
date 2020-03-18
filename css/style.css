@@ -667,6 +667,9 @@ footer .footer-container .footer-technologies .tech-items span {
 .collaboration-container {
   background-color: #f9f9f9;
 }
+.collaboration-container.contacts-form {
+  padding: 40px 0 100px 0;
+}
 .collaboration-container .collaboration .coll-top p {
   font-weight: 500;
   font-size: 24px;
@@ -989,4 +992,16 @@ footer .footer-container .footer-technologies .tech-items span {
 }
 .about .about-container .about-section.about-section-image img {
   width: 556px;
+}
+.map .map-container {
+  position: relative;
+  padding-top: 50%;
+}
+.map .map-container iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
 }

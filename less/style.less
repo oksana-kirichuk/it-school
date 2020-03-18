@@ -910,6 +910,10 @@ footer {
 .collaboration-container {
     background-color: #f9f9f9;
 
+    &.contacts-form {
+        padding: 40px 0 100px 0;
+    }
+
     .collaboration {
        .coll-top {
            p {
@@ -1368,6 +1372,21 @@ footer {
     }
 }
 
+.map {
+    .map-container {
+        position: relative;
+        padding-top: 50%;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 100;
+        }
+    }
+}
 
 
 
