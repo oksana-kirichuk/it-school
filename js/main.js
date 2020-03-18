@@ -45,11 +45,9 @@
 //     }
 //   });
 
-var title = document.querySelector('.set > a');
 
-console.log(title);
       
-  
+
       
   
   
