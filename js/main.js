@@ -1,49 +1,40 @@
-// // Slider slick.js
+var accordion = (function () {
+    return function (selector) {
+		var _mainElem = document.querySelector(selector),
+			_items = _mainElem.querySelectorAll('.accordion__item');
 
-// $('.reviews-slider').slick({
-//     dots: true,
-//     arrows: true,
+		for(var i = 0; i < _items.length; i++) {
+			_items[i].addEventListener('click', function () {
 
-//     responsive: [
-//         {
-//             breakpoint: 1920,
-//             settings: {
-//                 slidesToShow: 3,
-//                 slidesToScroll: 3,
-//                 infinite: true,
-//                 dots: true
-//             }
-//         },
-//         {
-//             breakpoint: 900,
-//             settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 2,
-//             }
-//         },
-//         {
-//             breakpoint: 600,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1,
-//             }
-//         }
-//     ]
-// });
+				if (_mainElem.querySelector('.accordion__item--open') && _mainElem.querySelector('.accordion__item--open') != this) {
+					_mainElem.querySelector('.accordion__item--open .accordion__content').style.maxHeight = null;
+					_mainElem.querySelector('.accordion__item--open').classList.remove('accordion__item--open');
+				}	
 
-// $('.set > a').click(function(e) {
-//     let selector = this.getAttribute('data-accordeon');
-  
-//     if($(selector).hasClass('active')) {
-//       $(selector).removeClass('active');
-//       $(this).find('i').removeClass('fa-minus').addClass('fa-plus');
-//     } else {
-//       $('.content').removeClass('active');
-//       $('.set > a > i').removeClass('fa-minus').addClass('fa-plus')
-//       $(selector).addClass('active');
-//       $(this).find('i').removeClass('fa-plus').addClass('fa-minus');
-//     }
-//   });
+				var itemContent = this.querySelector('.accordion__content');				
+				
+				if (itemContent.style.maxHeight) {
+					itemContent.style.maxHeight = null;
+				} else {
+					itemContent.style.maxHeight = itemContent.scrollHeight + "px";
+				}
+
+				this.classList.toggle('accordion__item--open');
+			});
+		}
+    }
+}());
+
+
+function ready() {
+    if (document.querySelector('.accordion') != null) {
+        var accordionTest = accordion('.accordion');
+    }
+    
+}
+
+document.addEventListener("DOMContentLoaded", ready);
+
 
 
       

@@ -258,8 +258,33 @@ body {
   font-size: 24px;
   color: #fff;
 }
+.honor-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.honor-container::before,
+.honor-container::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+}
+.honor-container::before {
+  left: 0;
+  background: #4B67B1;
+}
+.honor-container::after {
+  right: 0;
+  background: #2B4177;
+}
 .honor-container .honor-content {
   display: flex;
+  position: relative;
 }
 .honor-container .honor-content .honor {
   padding: 80px 60px;
@@ -663,6 +688,71 @@ footer .footer-container .footer-technologies .tech-items span {
 .course-description-container .course-description .course-description-image {
   width: 40%;
   box-sizing: border-box;
+}
+.programm-course-container .programm-course .accordion .accordion__item {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 20px 30px 15px 20px;
+  box-shadow: 0 0 10px rgba(20, 57, 96, 0.1);
+  margin-bottom: 15px;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__box .accordion__number {
+  background-color: #5fbfcd;
+  width: 25px;
+  height: 25px;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.875em;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__box .accordion__title {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  font-size: 1.1em;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__box .accordion__arrow {
+  height: 20px;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__box .accordion__arrow svg {
+  fill: #2d59cf;
+  transition: 0.3s;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__content {
+  transition: 0.5s;
+  overflow: hidden;
+  height: auto;
+  max-height: 0;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper {
+  padding: 20px 30px 20px 36px;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper .accordion__subtitle {
+  font-weight: bold;
+  font-size: 1em;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper .accordion__list .list__elem {
+  position: relative;
+  list-style-type: none;
+  padding-left: 25px;
+  margin-bottom: 3px;
+}
+.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper .accordion__list .list__elem::before {
+  content: url('../img/checkmark.svg');
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .collaboration-container {
   background-color: #f9f9f9;
