@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+// vars
+
+@mainColor: #1B47B1;
+
 // wrapper
 
 .wrapper {
@@ -24,7 +28,7 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    color: #4B67B1;
+    color: @mainColor;
 }
 
 // main code
@@ -189,7 +193,7 @@ body {
                     color: #fff;
                     margin-right: 28px;
                     padding: 25px 28px;
-                    background: #4B67B1;
+                    background: @mainColor;
                     border: none;
                 }
     
@@ -216,10 +220,10 @@ body {
 
             .courses-prof {
                 .headling-second;
-                color: #4B67B1;
+                color: @mainColor;
                 margin-right: 70px;
                 cursor: pointer;
-                border-bottom: 2px solid #4B67B1;
+                border-bottom: 2px solid @mainColor;
                 padding-bottom: 15px;
             }
 
@@ -236,7 +240,7 @@ body {
                     margin-bottom: 50px;
 
                     span {
-                        color: #4B67B1;
+                        color: @mainColor;
                         font-size: 36px;
                         margin-right: 8px;
                     }
@@ -304,7 +308,7 @@ body {
             z-index: 200;
 
             &.block-light-blue {
-                background: #4B67B1;
+                background: @mainColor;
             }
         }
     }
@@ -315,7 +319,7 @@ body {
         box-sizing: border-box;
 
         &.block-light-blue {
-            background: #4B67B1;
+            background: @mainColor;
         }
 
         .course-block-title {
@@ -383,7 +387,7 @@ body {
 
     &::before {
         left: 0;
-        background: #4B67B1;
+        background: @mainColor;
     }
 
     &::after {
@@ -417,11 +421,11 @@ body {
             }
             
             &.courses {
-                background: #4B67B1;
+                background: @mainColor;
                 // position: relative;
 
                 // &::before {
-                //     background-color: #4B67B1;
+                //     background-color: @mainColor;
                 //     position: absolute;
                 //     content: '';
                 //     top: 0;
@@ -463,7 +467,7 @@ body {
         width: 12%;
         right: 0;
         height: 6px;
-        background-color: #4B67B1;;
+        background-color: @mainColor;;
         margin-top: 4px;
         cursor: pointer;
     }
@@ -495,7 +499,7 @@ body {
                     margin-right: 30px;
 
                     span {
-                        color: #4B67B1;
+                        color: @mainColor;
                         font-size: 40px;
                     }
                 }
@@ -528,7 +532,7 @@ body {
                 width: 12%;
                 right: 0;
                 height: 6px;
-                background-color: #4B67B1;;
+                background-color: @mainColor;;
                 margin-top: 4px;
                 cursor: pointer;
             }
@@ -563,7 +567,7 @@ body {
                         h4 {
                             font-size: 24px;
                             line-height: 28px;
-                            color: #4B67B1;
+                            color: @mainColor;
                             font-weight: bold;
                         }
 
@@ -619,7 +623,7 @@ body {
 }
 
 footer {
-    background: #4B67B1;
+    background: @mainColor;
     
     &.light-blue-footer {
         background: linear-gradient(136.81deg, #499FAB 7.54%, #5FBFCD 65.37%);
@@ -764,7 +768,7 @@ footer {
 // course.html
 
 .course-header {
-    background: linear-gradient(136.81deg, #3D589F 7.54%, #4B67B1 65.37%);
+    background: linear-gradient(136.81deg, #3D589F 7.54%, @mainColor 65.37%);
     padding: 160px 0;
     background-repeat: no-repeat;
     background-position: center;
@@ -881,7 +885,7 @@ footer {
                margin-bottom: 20px;
 
                 span {
-                    color: #4B67B1;
+                    color: @mainColor;
                     font-size: 64px;
                 }
             }
@@ -1104,7 +1108,7 @@ footer {
                         font-weight: bold;
                         font-size: 18px;
                         line-height: 21px;
-                        color: #4B67B1;
+                        color: @mainColor;
                     }
 
                     .form-input {
@@ -1250,7 +1254,7 @@ footer {
                         .set-content-left-bar {
                             .knowledge {
                                 span {
-                                    color: #4B67B1;
+                                    color: @mainColor;
                                     padding-right: 18px;
                                     font-size: 24px;
                                 }
@@ -1418,7 +1422,7 @@ footer {
                     font-size: 18px;
                     line-height: 21px;
                     text-align: center;
-                    color: #4B67B1;
+                    color: @mainColor;
                     padding: 5px 0;
                 }
             }
@@ -1500,7 +1504,7 @@ footer {
                         }
                     }
                     .about-btn {
-                        background: #4B67B1;
+                        background: @mainColor;
                         border-radius: 40px;
                         padding: 25px 28px;
                         display: inline-block;
