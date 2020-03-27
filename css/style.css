@@ -692,7 +692,7 @@ footer .footer-container .footer-technologies .tech-items span {
 .programm-course-container .programm-course .accordion .accordion__item {
   border: 1px solid #cccccc;
   border-radius: 5px;
-  padding: 20px 30px 15px 20px;
+  padding: 20px 30px 20px 20px;
   box-shadow: 0 0 10px rgba(20, 57, 96, 0.1);
   margin-bottom: 15px;
 }
@@ -719,7 +719,10 @@ footer .footer-container .footer-technologies .tech-items span {
   margin: 0;
   text-align: left;
   width: 100%;
-  font-size: 1.1em;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333;
 }
 .programm-course-container .programm-course .accordion .accordion__item .accordion__box .accordion__arrow {
   height: 20px;
@@ -740,12 +743,15 @@ footer .footer-container .footer-technologies .tech-items span {
 .programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper .accordion-subtitle {
   font-weight: bold;
   padding: 10px 0 30px 0;
+  font-size: 18px;
 }
 .programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper .accordion-list .list-elem {
   position: relative;
   list-style-type: none;
   padding-left: 25px;
   padding-bottom: 5px;
+  line-height: 28px;
+  font-size: 16px;
 }
 .programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper .accordion-list .list-elem::before {
   content: url('../img/checkmark.svg');

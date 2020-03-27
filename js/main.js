@@ -1,3 +1,5 @@
+// Accordion 
+
 var accordion = (function () {
     return function (selector) {
 		var _mainElem = document.querySelector(selector),
@@ -25,7 +27,6 @@ var accordion = (function () {
     }
 }());
 
-
 function ready() {
     if (document.querySelector('.accordion') != null) {
         var accordionTest = accordion('.accordion');
@@ -34,6 +35,8 @@ function ready() {
 }
 
 document.addEventListener("DOMContentLoaded", ready);
+
+
 
 
 
