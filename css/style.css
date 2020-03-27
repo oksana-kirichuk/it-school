@@ -15,7 +15,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
 }
 .menu-fixed {
   position: absolute;
@@ -130,7 +130,7 @@ body {
   color: #fff;
   margin-right: 28px;
   padding: 25px 28px;
-  background: #1B47B1;
+  background: #2В57В1;
   border: none;
 }
 .main-header .header-container .header-buttons .header-btn.trans-btn {
@@ -151,10 +151,10 @@ body {
   font-size: 40px;
   line-height: 47px;
   color: #333333;
-  color: #1B47B1;
+  color: #2В57В1;
   margin-right: 70px;
   cursor: pointer;
-  border-bottom: 2px solid #1B47B1;
+  border-bottom: 2px solid #2В57В1;
   padding-bottom: 15px;
 }
 .courses .courses-container .courses-links .courses-kids {
@@ -166,7 +166,7 @@ body {
   margin-bottom: 50px;
 }
 .courses .courses-container .courses-content .courses-block .courses-main-title span {
-  color: #1B47B1;
+  color: #2В57В1;
   font-size: 36px;
   margin-right: 8px;
 }
@@ -216,14 +216,14 @@ body {
   z-index: 200;
 }
 .course-block-item .block-bg .course-block-extra.block-light-blue {
-  background: #1B47B1;
+  background: #2В57В1;
 }
 .course-block-item .course-block-content {
   padding: 50px 0 20px 20px;
   box-sizing: border-box;
 }
 .course-block-item .course-block-content.block-light-blue {
-  background: #1B47B1;
+  background: #2В57В1;
 }
 .course-block-item .course-block-content .course-block-title {
   margin-bottom: 40px;
@@ -276,7 +276,7 @@ body {
 }
 .honor-container::before {
   left: 0;
-  background: #1B47B1;
+  background: #2В57В1;
 }
 .honor-container::after {
   right: 0;
@@ -299,7 +299,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   color: #fff;
   padding: 25px 0;
 }
@@ -308,7 +308,7 @@ body {
   color: #fff;
 }
 .honor-container .honor-content .honor.courses {
-  background: #1B47B1;
+  background: #2В57В1;
 }
 .honor-container .honor-content .honor.students {
   background: #383FA8;
@@ -325,7 +325,7 @@ body {
   width: 12%;
   right: 0;
   height: 6px;
-  background-color: #1B47B1;
+  background-color: #2В57В1;
   margin-top: 4px;
   cursor: pointer;
 }
@@ -353,14 +353,14 @@ body {
   margin-right: 30px;
 }
 .advantages .advantages-container .advantages-list .advantages-item .adv-image span {
-  color: #1B47B1;
+  color: #2В57В1;
   font-size: 40px;
 }
 .advantages .advantages-container .advantages-list .advantages-item .adv-description h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   margin-bottom: 20px;
 }
 .advantages .advantages-container .advantages-list .advantages-item .adv-description p {
@@ -378,7 +378,7 @@ body {
   width: 12%;
   right: 0;
   height: 6px;
-  background-color: #1B47B1;
+  background-color: #2В57В1;
   margin-top: 4px;
   cursor: pointer;
 }
@@ -407,7 +407,7 @@ body {
 .reviews .reviews-container .reviews-slider .reviews-slider-content .review-top .review-name h4 {
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   font-weight: bold;
 }
 .reviews .reviews-container .reviews-slider .reviews-slider-content .review-top .review-name p {
@@ -440,7 +440,7 @@ body {
   align-items: flex-end;
 }
 footer {
-  background: #1B47B1;
+  background: #2В57В1;
 }
 footer.light-blue-footer {
   background: linear-gradient(136.81deg, #499FAB 7.54%, #5FBFCD 65.37%);
@@ -490,7 +490,7 @@ footer .footer-container .footer-contacts .footer-contacts-title h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   color: #fff;
 }
 footer .footer-container .footer-technologies {
@@ -503,7 +503,7 @@ footer .footer-container .footer-technologies .footer-tech-title h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   color: #fff;
 }
 footer .footer-container .footer-technologies .tech-items span {
@@ -550,7 +550,7 @@ footer .footer-container .footer-technologies .tech-items span {
   text-align: center;
 }
 .course-header {
-  background: linear-gradient(136.81deg, #3D589F 7.54%, #1B47B1 65.37%);
+  background: linear-gradient(136.81deg, #3D589F 7.54%, #2В57В1 65.37%);
   padding: 160px 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -645,7 +645,7 @@ footer .footer-container .footer-technologies .tech-items span {
   margin-bottom: 20px;
 }
 .about-course .about-course-container .about-course-item .about-icon span {
-  color: #1B47B1;
+  color: #2В57В1;
   font-size: 64px;
 }
 .about-course .about-course-container .about-course-item .about-descr p {
@@ -803,7 +803,7 @@ footer .footer-container .footer-technologies .tech-items span {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  color: #1B47B1;
+  color: #2В57В1;
 }
 .collaboration-container .collaboration-block .coll-form form .form-block .form-input {
   padding-top: 12px;
@@ -864,7 +864,7 @@ footer .footer-container .footer-technologies .tech-items span {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   color: #fff;
   padding-bottom: 20px;
 }
@@ -904,7 +904,7 @@ footer .footer-container .footer-technologies .tech-items span {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #1B47B1;
+  color: #2В57В1;
   color: #333;
   padding-bottom: 44px;
 }
@@ -912,7 +912,7 @@ footer .footer-container .footer-technologies .tech-items span {
   display: flex;
 }
 .programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-content .set-content .set-content-left-bar .knowledge span {
-  color: #1B47B1;
+  color: #2В57В1;
   padding-right: 18px;
   font-size: 24px;
 }
@@ -1034,7 +1034,7 @@ footer .footer-container .footer-technologies .tech-items span {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #1B47B1;
+  color: #2В57В1;
   padding: 5px 0;
 }
 .about {
@@ -1084,7 +1084,7 @@ footer .footer-container .footer-technologies .tech-items span {
   color: #4F4F4F;
 }
 .about .about-container .about-section .about-section-right.about-section-text .about-btn {
-  background: #1B47B1;
+  background: #2В57В1;
   border-radius: 40px;
   padding: 25px 28px;
   display: inline-block;
