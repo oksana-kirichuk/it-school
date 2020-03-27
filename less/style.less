@@ -959,6 +959,9 @@ footer {
                 padding: 20px 30px 15px 20px;
                 box-shadow: 0 0 10px rgba(20,57,96, 0.10);
                 margin-bottom: 15px;
+                
+                
+                
         
                 .accordion__box {
                     display: flex;
@@ -974,7 +977,7 @@ footer {
                         border-radius: 50%;
                         text-align: center;
                         color: #ffffff;
-                        font-size: 0.875em;
+                        font-size: 16px;
                         margin-right: 10px;
                         flex-shrink: 0;
                         transition: 0.2s;
@@ -990,33 +993,32 @@ footer {
                     .accordion__arrow {
                         height: 20px;
                         svg {
-                            fill: #2d59cf;
+                            fill: #333;;
                             transition: 0.3s;
                         }
                     }
                 }
 
-                .accordion__content {
-                    transition: 0.5s;
+                .accordion-content {
                     overflow: hidden;
                     height: auto;
                     max-height: 0;
+                    transition: 0.5s;
         
-                    .accordion__wrapper {
+                    .accordion-wrapper {
                         padding: 20px 30px 20px 36px;
 
-                        .accordion__subtitle {
+                        .accordion-subtitle {
                             font-weight: bold;
-		                    font-size: 1em;
+                            padding: 10px 0 30px 0;
                         }
-                        .accordion__list {
-                            
 
-                            .list__elem {
+                        .accordion-list {
+                            .list-elem {
                                 position: relative;
                                 list-style-type: none;
                                 padding-left: 25px;
-                                margin-bottom: 3px;
+                                padding-bottom: 5px;
 
                                 &::before {
                                     content: url('../img/checkmark.svg');
@@ -1024,8 +1026,23 @@ footer {
                                     left: 0;
                                     top: 50%;
                                     transform: translateY(-50%);
+                                    width: 15px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+
+            .accordion__item--open {
+                .accordion__box {
+                    .accordion__number {
+                        background-color: #5fbfcd;
+                    }
+
+                    .accordion__arrow {
+                        svg {
+                            fill: #2d59cf;
                         }
                     }
                 }
@@ -1033,6 +1050,8 @@ footer {
         }
     }
 }
+
+// collaboration section 
 
 .collaboration-container {
     background-color: #f9f9f9;
@@ -1176,6 +1195,8 @@ footer {
 // accordeon
 
 .programm-course-container {
+    padding: 60px 0;
+    
     .programm-course {
         .accordeon-container {
             .accordeon-set {

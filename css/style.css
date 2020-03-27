@@ -710,7 +710,7 @@ footer .footer-container .footer-technologies .tech-items span {
   border-radius: 50%;
   text-align: center;
   color: #ffffff;
-  font-size: 0.875em;
+  font-size: 16px;
   margin-right: 10px;
   flex-shrink: 0;
   transition: 0.2s;
@@ -725,34 +725,41 @@ footer .footer-container .footer-technologies .tech-items span {
   height: 20px;
 }
 .programm-course-container .programm-course .accordion .accordion__item .accordion__box .accordion__arrow svg {
-  fill: #2d59cf;
+  fill: #333;
   transition: 0.3s;
 }
-.programm-course-container .programm-course .accordion .accordion__item .accordion__content {
-  transition: 0.5s;
+.programm-course-container .programm-course .accordion .accordion__item .accordion-content {
   overflow: hidden;
   height: auto;
   max-height: 0;
+  transition: 0.5s;
 }
-.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper {
+.programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper {
   padding: 20px 30px 20px 36px;
 }
-.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper .accordion__subtitle {
+.programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper .accordion-subtitle {
   font-weight: bold;
-  font-size: 1em;
+  padding: 10px 0 30px 0;
 }
-.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper .accordion__list .list__elem {
+.programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper .accordion-list .list-elem {
   position: relative;
   list-style-type: none;
   padding-left: 25px;
-  margin-bottom: 3px;
+  padding-bottom: 5px;
 }
-.programm-course-container .programm-course .accordion .accordion__item .accordion__content .accordion__wrapper .accordion__list .list__elem::before {
+.programm-course-container .programm-course .accordion .accordion__item .accordion-content .accordion-wrapper .accordion-list .list-elem::before {
   content: url('../img/checkmark.svg');
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  width: 15px;
+}
+.programm-course-container .programm-course .accordion .accordion__item--open .accordion__box .accordion__number {
+  background-color: #5fbfcd;
+}
+.programm-course-container .programm-course .accordion .accordion__item--open .accordion__box .accordion__arrow svg {
+  fill: #2d59cf;
 }
 .collaboration-container {
   background-color: #f9f9f9;
@@ -864,6 +871,9 @@ footer .footer-container .footer-technologies .tech-items span {
 .overview-container .overview .overview-cards {
   display: flex;
   width: 100%;
+}
+.programm-course-container {
+  padding: 60px 0;
 }
 .programm-course-container .programm-course .accordeon-container .accordeon-set .accordeon-set-name {
   display: flex;
