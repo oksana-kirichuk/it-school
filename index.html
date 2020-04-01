@@ -31,7 +31,68 @@
                 </div>
                 <nav class="menu">
                     <li><a href="">Главная</a></li>
-                    <li><a href="" class="drop-btn">Курсы</a></li>
+                    <li class="show_tabs"><a href="">Курсы</a>
+                    	<div class="tabs__block">
+							<div class="tabs__courses">
+								<span class="tabs__title">Курсы</span>
+								<ul class="tabs__list">
+									<li class="tabs__list_item active" data-tab="1">HTML</li>
+									<li class="tabs__list_item" data-tab="2">CSS</li>
+									<li class="tabs__list_item" data-tab="3">JS</li>
+									<li class="tabs__list_item" data-tab="4">REACT</li>
+									<li class="tabs__list_item" data-tab="5">VUE</li>
+								</ul>
+							</div>
+					
+							<div class="tabs__container">
+								<div class="tabs__inner active" data-tab="1">
+									<ul class="tabs__inner_list">
+									<li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+									</ul>
+								</div>
+								<div class="tabs__inner" data-tab="2">
+									<ul class="tabs__inner_list">
+									<li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+									</ul>
+								</div>
+								<div class="tabs__inner" data-tab="3">
+									<ul class="tabs__inner_list">
+									<li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+									</ul>
+								</div>
+								<div class="tabs__inner" data-tab="4">
+									<ul class="tabs__inner_list">
+									<li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+									</ul>
+								</div>
+								<div class="tabs__inner" data-tab="5">
+									<ul class="tabs__inner_list">
+									<li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+									<li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+                    </li>
                     <li><a href="">Сотрудничество</a></li>
                     <li><a href="">О нас</a></li>
                     <li><a href="">FAQ</a></li>
@@ -691,7 +752,9 @@
                 </div>                        
             </div>
         </div>
-    </div>
+	</div>
+	
+	
 
     <footer>
         <div class="wrapper">
@@ -799,12 +862,81 @@
         <div class="wrapper">
             <p>© 2012 — 2020 Компьютерная школа ОНПУ. Все права защищены.</p>
         </div>
-    </div>
+	</div>
 
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<main class="main">
+		<div class="tabs">
+		  <div class="wr">
+			<div class="tabs__content">
+			  <button class="show_tabs">Toggle tabs</button>
+			  <div class="tabs__block">
+				<div class="tabs__courses">
+				  <span class="tabs__title">Курсы</span>
+				  <ul class="tabs__list">
+					<li class="tabs__list_item active" data-tab="1">HTML</li>
+					<li class="tabs__list_item" data-tab="2">CSS</li>
+					<li class="tabs__list_item" data-tab="3">JS</li>
+					<li class="tabs__list_item" data-tab="4">REACT</li>
+					<li class="tabs__list_item" data-tab="5">VUE</li>
+				  </ul>
+				</div>
+		
+				<div class="tabs__container">
+				  <div class="tabs__inner active" data-tab="1">
+					<ul class="tabs__inner_list">
+					  <li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor.</li>
+					</ul>
+				  </div>
+				  <div class="tabs__inner" data-tab="2">
+					<ul class="tabs__inner_list">
+					  <li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor2.</li>
+					</ul>
+				  </div>
+				  <div class="tabs__inner" data-tab="3">
+					<ul class="tabs__inner_list">
+					  <li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor3.</li>
+					</ul>
+				  </div>
+				  <div class="tabs__inner" data-tab="4">
+					<ul class="tabs__inner_list">
+					  <li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor4.</li>
+					</ul>
+				  </div>
+				  <div class="tabs__inner" data-tab="5">
+					<ul class="tabs__inner_list">
+					  <li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+					  <li class="tabs__inner_item">Lorem, ipsum dolor5.</li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </main>
+	
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/main.js"></script> -->
+<script src="js/main.js"></script>
 
 </body>
 </html>
