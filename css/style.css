@@ -1,5 +1,41 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xMIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxP.ttf) format('truetype');
+}
+html,
 body {
-  font-size: 16px;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+div,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
 }
 .wrapper {
   max-width: 1200px;
@@ -250,7 +286,7 @@ body {
   color: #fff;
 }
 .course-block-item .course-block-footer {
-  background: #2B57B1;
+  background: linear-gradient(136.81deg, #204194 7.54%, #1e3a86 65.37%);
   padding: 16px 22px;
 }
 .course-block-item .course-block-footer p {
@@ -769,6 +805,7 @@ footer .footer-container .footer-technologies .tech-items span {
 }
 .collaboration-container {
   background-color: #f9f9f9;
+  padding: 80px 0;
 }
 .collaboration-container.contacts-form {
   padding: 40px 0 100px 0;
@@ -806,7 +843,7 @@ footer .footer-container .footer-technologies .tech-items span {
   color: #2B57B1;
 }
 .collaboration-container .collaboration-block .coll-form form .form-block .form-input {
-  padding-top: 12px;
+  padding: 5px 20px;
   border: 1px solid #E0E0E0;
   box-sizing: border-box;
   border-radius: 10px;
@@ -817,16 +854,62 @@ footer .footer-container .footer-technologies .tech-items span {
   width: 85%;
   height: 60px;
 }
+.collaboration-container .collaboration-block .coll-form form .form-block .form-input:focus {
+  border-color: #EB5757;
+}
 .collaboration-container .collaboration-block .coll-form form .form-messengers label {
   font-size: 18px;
   line-height: 21px;
   color: #333;
   padding: 0 40px 0 10px;
+  display: inline-block;
+  margin-right: 20px;
 }
 .collaboration-container .collaboration-block .coll-form form .form-messengers input {
   padding: 7px;
   background-color: #fff;
   border: 1px solid #E0E0E0;
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox] + label {
+  display: inline-block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox] {
+  display: none;
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #eee;
+  background: white;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+.collaboration-container .collaboration-block .coll-form form .form-messengers input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
 }
 .collaboration-container .collaboration-block .coll-form form .form-btns .form-btn {
   padding: 25px 100px;
@@ -841,14 +924,16 @@ footer .footer-container .footer-technologies .tech-items span {
   margin-right: 30px;
 }
 .collaboration-container .collaboration-block .coll-form form .form-btns .form-btn-reset {
-  color: #BDBDBD;
+  color: #fff;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   border: none;
   background: transparent;
   display: inline-block;
-  padding: 25px 100px;
+  padding: 25px 80px;
+  border-radius: 40px;
+  outline: none;
 }
 .collaboration-container .collaboration-block .coll-contacts {
   background-repeat: no-repeat;
@@ -867,6 +952,27 @@ footer .footer-container .footer-technologies .tech-items span {
   color: #2B57B1;
   color: #fff;
   padding-bottom: 20px;
+}
+.form-btn-send {
+  background-color: #2B57B1 !important;
+}
+.form-btn-reset-active {
+  background-color: #048f04 !important;
+}
+.form-input-invalid {
+  border-color: red!important;
+  position: relative!important;
+}
+.form-input-invalid::after {
+  content: 'Заполните это поле' !important;
+  font-size: 14px!important;
+  color: red!important;
+  position: absolute!important;
+  top: 0px!important;
+  left: 0px!important;
+}
+.checkbox-invalid {
+  border: 1px solid red!important;
 }
 .overview-container {
   padding-top: 80px;
@@ -1110,4 +1216,105 @@ footer .footer-container .footer-technologies .tech-items span {
   height: 100%;
   width: 100%;
   z-index: 100;
+}
+.faq-wrapper {
+  margin: auto;
+  max-width: 1140px;
+  padding: 30px 0 30px 0;
+}
+.faq-wrapper .tabs__switcher {
+  display: flex;
+  width: 60%;
+}
+.faq-wrapper .tabs__switcher .tabs__switcher-button {
+  width: 25%;
+  text-align: center;
+  padding: 12px;
+  cursor: pointer;
+  border: solid 2px #e7e7e7;
+  transition: 0.3s;
+}
+.faq-wrapper .tabs__switcher .tabs__switcher-button.active {
+  background-color: #4b67b1;
+  border-color: #4b67b1;
+  color: #fff;
+  cursor: auto;
+}
+.faq-wrapper .tabs__switcher .tabs__switcher-button:first-child {
+  border-radius: 12px 0 0 12px;
+  border-right: none;
+}
+.faq-wrapper .tabs__switcher .tabs__switcher-button::nth-child(2) {
+  border-right: none;
+}
+.faq-wrapper .tabs__switcher .tabs__switcher-button:last-child {
+  border-radius: 0 12px 12px 0;
+  border-left: none;
+}
+.faq-wrapper .tabs__switcher .tabs__switcher-button:hover {
+  background-color: #e7e7e7;
+}
+.faq-wrapper .tabs__container {
+  margin: 30px 0 30px 0;
+}
+.faq-wrapper .tabs__container .tabs__content {
+  display: none;
+}
+.faq-wrapper .tabs__container .tabs__content.visible {
+  display: block;
+}
+.faq-wrapper .tabs__container .tabs__content .list-item {
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 0 15px #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars {
+  width: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars .bars {
+  transition: 0.3s;
+  margin-top: 15px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars .bars::before,
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars .bars::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background-color: #bd1b1b;
+  top: 0;
+  left: 7px;
+}
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars .bars::after {
+  transform: rotate(90deg);
+}
+.faq-wrapper .tabs__container .tabs__content .list-item.list-item-open .bars {
+  transform: rotate(45deg);
+}
+.faq-wrapper .tabs__container .tabs__content .list-item.list-item-open p {
+  -webkit-opacity: 1;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 12px;
+  height: auto;
+}
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__content {
+  padding: 15px;
+  padding-left: 0;
+  width: calc(80% - 80px);
+}
+.list-item__content p {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
 }
