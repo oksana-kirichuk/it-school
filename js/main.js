@@ -1,169 +1,248 @@
+// 
+//   var accordion = (function () {
+//     return function (selector) {
+//     var _mainElem = document.querySelector(selector),
+//       _items = _mainElem.querySelectorAll('.accordion__item');
+  
+//     for(var i = 0; i < _items.length; i++) {
+//       _items[i].addEventListener('click', function () {
+  
+//         if (_mainElem.querySelector('.accordion__item--open') && _mainElem.querySelector('.accordion__item--open') != this) {
+//           _mainElem.querySelector('.accordion__item--open .accordion-content').style.maxHeight = null;
+//           _mainElem.querySelector('.accordion__item--open').classList.remove('accordion__item--open');
+//         }	
+  
+//         var itemContent = this.querySelector('.accordion-content');				
+        
+//         if (itemContent.style.maxHeight) {
+//           itemContent.style.maxHeight = null;
+//         } else {
+//           itemContent.style.maxHeight = itemContent.scrollHeight + "px";
+//         }
+  
+//         this.classList.toggle('accordion__item--open');
+//       });
+//     }
+//     }
+//   });
+  
+//   
+  
+  
+//   // form
+  
+//   (function() {
+//       const inputs = document.querySelectorAll('.form-input'),
+//               checkboxes = document.querySelectorAll('input[type="checkbox"]'),
+//               send = document.querySelector('.form-btn'),
+//               reset = document.querySelector('.form-btn-reset');
+//       let toggle1,
+//           toggle2;
+    
+//       const allElements = [...Array.from(inputs), ...Array.from(checkboxes)];
+    
+//       const checkForm2 = () => {
+//           if(checkboxes[0].checked || checkboxes[1].checked) {
+//               toggle2 = true;
+//           } else {
+//               toggle2 = false;
+//           };
+    
+//         for (let i = 0; i < inputs.length; i++) {
+//           if(inputs[i].value !== '') {
+//               toggle2 = true;
+//           } 
+//         };
+    
+//         if(toggle2) {
+//           reset.classList.add('form-btn-reset-active');
+//         } else {
+//           reset.classList.remove('form-btn-reset-active');
+//         };
+//       };
+    
+//       const checkForm = () => {
+//           if(checkboxes[0].checked || checkboxes[1].checked) {
+//               toggle1 = true;
+//           } else {
+//               toggle1 = false;
+//           };
+    
+//         for (let i = 0; i < inputs.length; i++) {
+//           if(inputs[i].value !== '') {
+//               toggle1 = true;
+//           } else {
+//               toggle1 = false;
+//           };
+//         };
+    
+//           if(toggle1) {
+//               send.classList.add('form-btn-send');
+//           } else {
+//               send.classList.remove('form-btn-send');
+//           };
+//       };
+    
+//       for (let i = 0; i < allElements.length; i++) {
+//           allElements[i].addEventListener('change', checkForm);
+//           allElements[i].addEventListener('change', checkForm2);
+//       };
+    
+//       const validateFrom = evt => {
+//           evt.preventDefault();
+//           if (!toggle1) {
+//               for (let i = 0; i < inputs.length; i++) {
+//               if(inputs[i].value == '') {
+//                   inputs[i].classList.add('form-input-invalid');
+//               } else {
+//                   inputs[i].classList.remove('form-input-invalid');
+//               }
+//           };
+//           if(!checkboxes[0].checked && !checkboxes[1].checked) {
+//               checkboxes.forEach( elem => {
+//               console.log(elem)
+//               elem.classList.add('checkbox-invalid')
+//             }
+//             );
+//           } else {
+//               checkboxes.forEach( elem => {
+//               elem.classList.add('checkbox-invalid')
+//             }
+//             );
+//           };
+//         };
+//       };
+//       send.addEventListener('click', evt => validateFrom(evt));
+//   });
+
+
+// // Accordion 
+
 // Accordion 
 
+
+
 var accordion = (function () {
-    return function (selector) {
-		var _mainElem = document.querySelector(selector),
-			_items = _mainElem.querySelectorAll('.accordion__item');
+  return function (selector) {
+  var _mainElem = document.querySelector(selector),
+    _items = _mainElem.querySelectorAll('.accordion__item');
 
-		for(var i = 0; i < _items.length; i++) {
-			_items[i].addEventListener('click', function () {
+  for(var i = 0; i < _items.length; i++) {
+    _items[i].addEventListener('click', function () {
 
-				if (_mainElem.querySelector('.accordion__item--open') && _mainElem.querySelector('.accordion__item--open') != this) {
-					_mainElem.querySelector('.accordion__item--open .accordion-content').style.maxHeight = null;
-					_mainElem.querySelector('.accordion__item--open').classList.remove('accordion__item--open');
-				}	
+      if (_mainElem.querySelector('.accordion__item--open') && _mainElem.querySelector('.accordion__item--open') != this) {
+        _mainElem.querySelector('.accordion__item--open .accordion-content').style.maxHeight = null;
+        _mainElem.querySelector('.accordion__item--open').classList.remove('accordion__item--open');
+      }	
 
-				var itemContent = this.querySelector('.accordion-content');				
-				
-				if (itemContent.style.maxHeight) {
-					itemContent.style.maxHeight = null;
-				} else {
-					itemContent.style.maxHeight = itemContent.scrollHeight + "px";
-				}
+      var itemContent = this.querySelector('.accordion-content');				
+      
+      if (itemContent.style.maxHeight) {
+        itemContent.style.maxHeight = null;
+      } else {
+        itemContent.style.maxHeight = itemContent.scrollHeight + "px";
+      }
 
-				this.classList.toggle('accordion__item--open');
-			});
-		}
-    }
+      this.classList.toggle('accordion__item--open');
+    });
+  }
+  }
 }());
 
 function ready() {
-    if (document.querySelector('.accordion') != null) {
-        var accordionTest = accordion('.accordion');
-    }
-}
-
-// Tab FAQ
-
-let tabButton = document.querySelectorAll(".tabs__switcher-button");
-let tabSlide = document.querySelectorAll(".tabs__content");
-let listItem = document.querySelectorAll(".list-item");
-
-//tabs switching
-
-for(let i = 0; i < tabButton.length; i++) {
-  tabButton[i].onclick = () => {
-    tabButton.forEach((item, i) => {
-      	item.classList.remove("active");
-    });
-
-    tabSlide.forEach((item, i) => {
-		item.classList.remove("visible");
-
-		for(let j = 1; j < item.children.length; j++) {
-			item.children[j].classList.remove("list-item-open");
-		}
-
-		item.children[0].classList.add("list-item-open");
-    });
-
-    tabButton[i].classList.add("active");
-    tabSlide[i].classList.add("visible");
-  };
-}
-
-//accordion
-
-for(let i = 0; i < listItem.length; i++) {
-  listItem[i].onclick = () => {
-
-    if(!listItem[i].classList.contains("list-item-open")) {
-      listItem.forEach((item, i) => {
-        item.classList.remove("list-item-open");
-      });
-
-      listItem[i].classList.add("list-item-open");
-    } else {
-      listItem[i].classList.remove("list-item-open");
-    }
+  if (document.querySelector('.accordion') != null) {
+      var accordionTest = accordion('.accordion');
   }
+  
 }
+
+document.addEventListener("DOMContentLoaded", ready);
 
 
 // form
 
 (function() {
-    const inputs = document.querySelectorAll('.form-input'),
-            checkboxes = document.querySelectorAll('input[type="checkbox"]'),
-            send = document.querySelector('.form-btn'),
-            reset = document.querySelector('.form-btn-reset');
-    let toggle1,
-        toggle2;
-  
-    const allElements = [...Array.from(inputs), ...Array.from(checkboxes)];
-  
-    const checkForm2 = () => {
-        if(checkboxes[0].checked || checkboxes[1].checked) {
-            toggle2 = true;
-        } else {
-            toggle2 = false;
-        };
-  
-      for (let i = 0; i < inputs.length; i++) {
-        if(inputs[i].value !== '') {
-            toggle2 = true;
-        } 
-      };
-  
-      if(toggle2) {
-        reset.classList.add('form-btn-reset-active');
+  const inputs = document.querySelectorAll('.form-input'),
+          checkboxes = document.querySelectorAll('input[type="checkbox"]'),
+          send = document.querySelector('.form-btn'),
+          reset = document.querySelector('.form-btn-reset');
+  let toggle1,
+      toggle2;
+
+  const allElements = [...Array.from(inputs), ...Array.from(checkboxes)];
+
+  const checkForm2 = () => {
+      if(checkboxes[0].checked || checkboxes[1].checked) {
+          toggle2 = true;
       } else {
-        reset.classList.remove('form-btn-reset-active');
+          toggle2 = false;
+      };
+
+    for (let i = 0; i < inputs.length; i++) {
+          if(inputs[i].value !== '') {
+          toggle2 = true;
+      } 
+    };
+
+    if(toggle2) {
+      reset.classList.add('form-btn-reset-active');
+    } else {
+      reset.classList.remove('form-btn-reset-active');
+    };
+  };
+
+  const checkForm = () => {
+      if(checkboxes[0].checked || checkboxes[1].checked) {
+          toggle1 = true;
+      } else {
+          toggle1 = false;
+      };
+
+    for (let i = 0; i < inputs.length; i++) {
+      if(inputs[i].value !== '') {
+          toggle1 = true;
+      } else {
+          toggle1 = false;
       };
     };
-  
-    const checkForm = () => {
-        if(checkboxes[0].checked || checkboxes[1].checked) {
-            toggle1 = true;
-        } else {
-            toggle1 = false;
-        };
-  
-      for (let i = 0; i < inputs.length; i++) {
-        if(inputs[i].value !== '') {
-            toggle1 = true;
-        } else {
-            toggle1 = false;
-        };
-      };
-  
-        if(toggle1) {
-            send.classList.add('form-btn-send');
-        } else {
-            send.classList.remove('form-btn-send');
-        };
+
+    if(toggle1) {
+      send.classList.add('form-btn-send');
+    } else {
+      send.classList.remove('form-btn-send');
     };
-  
-    for (let i = 0; i < allElements.length; i++) {
-        allElements[i].addEventListener('change', checkForm);
-        allElements[i].addEventListener('change', checkForm2);
-    };
-  
-    const validateFrom = evt => {
-        evt.preventDefault();
-        if (!toggle1) {
-            for (let i = 0; i < inputs.length; i++) {
-            if(inputs[i].value == '') {
-                inputs[i].classList.add('form-input-invalid');
-            } else {
-                inputs[i].classList.remove('form-input-invalid');
-            }
-        };
-        if(!checkboxes[0].checked && !checkboxes[1].checked) {
-            checkboxes.forEach( elem => {
-            console.log(elem)
-            elem.classList.add('checkbox-invalid')
+  };
+
+  for (let i = 0; i < allElements.length; i++) {
+      allElements[i].addEventListener('change', checkForm);
+      allElements[i].addEventListener('change', checkForm2);
+  };
+
+  const validateFrom = evt => {
+      evt.preventDefault();
+      if (!toggle1) {
+          for (let i = 0; i < inputs.length; i++) {
+          if(inputs[i].value == '') {
+              inputs[i].classList.add('form-input-invalid');
+          } else {
+              inputs[i].classList.remove('form-input-invalid');
           }
-          );
-        } else {
-            checkboxes.forEach( elem => {
-            elem.classList.add('checkbox-invalid')
-          }
-          );
-        };
+      };
+      if(!checkboxes[0].checked && !checkboxes[1].checked) {
+          checkboxes.forEach( elem => {
+          console.log(elem)
+          elem.classList.add('checkbox-invalid')
+        }
+        );
+      } else {
+          checkboxes.forEach( elem => {
+          elem.classList.add('checkbox-invalid')
+        }
+        );
       };
     };
-    send.addEventListener('click', evt => validateFrom(evt));
-});
+  };
+  send.addEventListener('click', evt => validateFrom(evt));
+})();
 
 
