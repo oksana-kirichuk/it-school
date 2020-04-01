@@ -96,6 +96,10 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
                     font-size: 18px;
                     color: #fff;
                 }
+
+                &.drop-parent {
+                    position: relative;
+                }
             }
         }
     
@@ -1776,4 +1780,112 @@ footer {
     margin: 0;
 }
 
+// dropdown
 
+.tabs__block {
+    display: none;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    color: #4d4d4d;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+  
+    &.active {
+        display: flex;
+    }
+
+    .tabs__courses {
+        padding: 40px 0 0 0;
+        border-right: 1px solid #ccc;
+        width: 200px !important;
+
+        .tabs__title {
+            display: block;
+            margin-bottom: 30px;
+            color: #3f51b5;
+            padding-left: 40px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .tabs__list {
+            .tabs__list_item {
+                padding: 20px 60px 20px 40px;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+          
+                &:hover {
+                    color: #3f51b5;
+                    // background: rgba($color: #3f51b5, $alpha: 0.2);
+                }
+          
+                &.active {
+                    color: #3f51b5;
+                    // background: rgba($color: #3f51b5, $alpha: 0.2);
+                }
+            }
+        }
+    }
+
+    .tabs__container {
+        padding: 30px;
+        width: 600px !important;
+        padding: 30px 10px;
+        box-sizing: border-box;
+
+        .tabs__inner {
+            height: 100%;
+            display: none;
+            transition: 0.3s ease-in-out;
+          
+            &.active {
+                display: block;
+            }
+
+            .tabs__inner_list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                .tabs__inner_item {
+                    margin-bottom: 20px;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    background-color: #3f51b5;
+                    color: #fff;
+                  
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show_tabs {
+    display: inline-block;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
