@@ -99,6 +99,12 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
 
                 &.drop-parent {
                     position: relative;
+
+                    span {
+                        color: #fff;
+                        font-size: 16px;
+                        margin-left: 5px;
+                    }
                 }
             }
         }
@@ -1785,7 +1791,6 @@ footer {
 .tabs__block {
     display: none;
     justify-content: space-between;
-    max-width: 600px;
     margin: 0 auto;
     background: #ffffff;
     color: #4d4d4d;
@@ -1793,6 +1798,7 @@ footer {
     position: absolute;
     left: 0;
     top: 50px;
+    background: #F6F6F6;
   
     &.active {
         display: flex;
@@ -1801,7 +1807,7 @@ footer {
     .tabs__courses {
         padding: 40px 0 0 0;
         border-right: 1px solid #ccc;
-        width: 200px !important;
+        width: 300px !important;
 
         .tabs__title {
             display: block;
@@ -1810,6 +1816,7 @@ footer {
             padding-left: 40px;
             font-size: 24px;
             font-weight: 700;
+            .headling-third;
         }
 
         .tabs__list {
@@ -1817,10 +1824,15 @@ footer {
                 padding: 20px 60px 20px 40px;
                 transition: 0.3s ease-in-out;
                 cursor: pointer;
+                color: #2B4177;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 24px;
+                box-sizing: border-box;
+                width: 100%;
           
                 &:hover {
-                    color: #3f51b5;
-                    // background: rgba($color: #3f51b5, $alpha: 0.2);
+                    background: rgba(75, 103, 177, 0.3);
                 }
           
                 &.active {
@@ -1833,7 +1845,7 @@ footer {
 
     .tabs__container {
         padding: 30px;
-        width: 600px !important;
+        width: 430px;
         padding: 30px 10px;
         box-sizing: border-box;
 
@@ -1850,17 +1862,34 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 100%;
 
                 .tabs__inner_item {
                     margin-bottom: 20px;
-                    padding: 10px 20px;
+                    padding: 16px 20px;
                     border-radius: 5px;
-                    background-color: #3f51b5;
+                    background-color: rgba(76,103,171);
                     color: #fff;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
                   
                     &:last-child {
                         margin-bottom: 0;
+                        margin-right: 20px;
+                    }
+
+                    img {
+                        width: 44px;
+                        height: 44px;
+                        padding-right: 14px;
+                    }
+
+                    span {
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 16px;
                     }
                 }
             }
@@ -1870,7 +1899,6 @@ footer {
 
 .show_tabs {
     display: inline-block;
-    background-color: #2196f3;
     color: #fff;
     border: none;
 }
