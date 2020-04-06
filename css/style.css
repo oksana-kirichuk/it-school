@@ -1480,7 +1480,7 @@ footer .footer-container .footer-technologies .tech-items span {
   height: 44px;
   padding-right: 14px;
 }
-.tabs__block .tabs__container .tabs__inner .tabs__inner_list .tabs__inner_item span {
+.tabs__block .tabs__container .tabs__inner .tabs__inner_list .tabs__inner_item a {
   color: #fff;
   font-weight: 700;
   font-size: 16px;
