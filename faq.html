@@ -9,7 +9,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick-reset.css">
+    <link rel="stylesheet" href="css/gg-grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Вопросы</title>
 </head>
 
@@ -30,12 +32,150 @@
                     </div>
                 </div>
                 <nav class="menu">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Курсы</a></li>
-                    <li><a href="">Сотрудничество</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="drop-parent"><a href="#" class="show_tabs">Курсы <span class="fas fa-chevron-down"></span></a></span>
+                        <div class="tabs__block">
+                            <div class="tabs__courses">
+                                <p class="tabs__title">Курсы</p>
+                                <ul class="tabs__list">
+                                    <li class="tabs__list_item active" data-tab="1">Web-разработка</li>
+                                    <li class="tabs__list_item" data-tab="2">Программирование</li>
+                                    <li class="tabs__list_item" data-tab="3">Интернет маркетинг</li>
+                                    <li class="tabs__list_item" data-tab="4">Пользователь ПК</li>
+                                    <li class="tabs__list_item" data-tab="5">Курсы для детей</li>
+                                </ul>
+                            </div>
+
+                            <div class="tabs__container">
+                                <div class="tabs__inner active" data-tab="1">
+                                    <ul class="tabs__inner_list">
+                                        <li class="tabs__inner_item">
+                                            <a href="">
+                                                <img src="img/ps-logo.png" alt="">
+                                                <span>Web-дизайн</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/css-logo.png" alt="">
+                                            <span>Front-end разработка. JavaScript</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/vue-logo.png" alt="">
+                                            <span>Front-end разработка. Vue JS</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/node-logo.png" alt="">
+                                            <span>Back-end разработка. Node.js</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/figma-logo.png" alt="">
+                                            <span>UI UX дизайн</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__inner" data-tab="2">
+                                    <ul class="tabs__inner_list">
+                                        <li class="tabs__inner_item">
+                                            <img src="img/ps-logo.png" alt="">
+                                            <span>2 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/css-logo.png" alt="">
+                                            <span>2 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/vue-logo.png" alt="">
+                                            <span>2 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/node-logo.png" alt="">
+                                            <span>2 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/figma-logo.png" alt="">
+                                            <span>2 Lorem ipsum dolor</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__inner" data-tab="3">
+                                    <ul class="tabs__inner_list">
+                                        <li class="tabs__inner_item">
+                                            <img src="img/ps-logo.png" alt="">
+                                            <span>3 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/css-logo.png" alt="">
+                                            <span>3 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/vue-logo.png" alt="">
+                                            <span>3 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/node-logo.png" alt="">
+                                            <span>3 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/figma-logo.png" alt="">
+                                            <span>3 Lorem ipsum dolor</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__inner" data-tab="4">
+                                    <ul class="tabs__inner_list">
+                                        <li class="tabs__inner_item">
+                                            <img src="img/ps-logo.png" alt="">
+                                            <span>4 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/css-logo.png" alt="">
+                                            <span>4 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/vue-logo.png" alt="">
+                                            <span>4 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/node-logo.png" alt="">
+                                            <span>4 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/figma-logo.png" alt="">
+                                            <span>4 Lorem ipsum dolor</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__inner" data-tab="5">
+                                    <ul class="tabs__inner_list">
+                                        <li class="tabs__inner_item">
+                                            <img src="img/ps-logo.png" alt="">
+                                            <span>5 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/css-logo.png" alt="">
+                                            <span>5 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/vue-logo.png" alt="">
+                                            <span>5 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/node-logo.png" alt="">
+                                            <span>5 Lorem ipsum dolor</span>
+                                        </li>
+                                        <li class="tabs__inner_item">
+                                            <img src="img/figma-logo.png" alt="">
+                                            <span>5 Lorem ipsum dolor</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="partners.html">Сотрудничество</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </nav>
                 <div class="language">
                     <label for="language"></label>
@@ -74,7 +214,7 @@
         </div>
     </div>
 
-    <div class="header-background" style="background-image: url(img/partners.png);">
+    <div class="header-background" style="background-image: url(img/partners.jpg);">
         <div class="header-background-title">
             <div class="wrapper">
                 <div class="basic-title-container">
@@ -104,17 +244,8 @@
             <div class="bars times"></div>
           </div>
           <div class="list-item__content">
-            1 Как проводятся занятия?
-            <p class="open">
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Как проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora assumenda odio consequatur ea. Soluta debitis deleniti nihil, facere quae ullam possimus beatae quas nulla repellat cumque voluptatem illo labore ducimus assumenda hic fugit quo delectus aut necessitatibus iste accusamus facilis consectetur. Accusamus, quidem quae hic fugiat ipsam aperiam architecto.</p>
           </div>
         </div>
         <div class="list-item">
@@ -122,17 +253,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 Получают ли выпускники курсов документ об окончании?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Получают ли выпускники курсов документ об окончании?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ducimus culpa labore, harum deleniti necessitatibus illum fugit quo perspiciatis, ad tempore? Beatae, libero doloremque itaque alias nemo, perferendis voluptatibus odit architecto explicabo voluptate omnis earum ducimus eveniet consectetur commodi tempore quibusdam illo esse labore! Inventore enim magnam vero, ipsa distinctio saepe voluptatem fugiat? Impedit, itaque error! Enim vel dolor voluptatum facere aspernatur odit temporibus culpa ipsum, dolores quisquam quas modi debitis iusto, quae voluptatem quod ducimus error reprehenderit nam suscipit.</p>
           </div>
         </div>
         <div class="list-item">
@@ -140,17 +262,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 Кто являются преподавателями курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Кто являются преподавателями курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -158,17 +271,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 Какие практические знания получают слушатели?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Какие практические знания получают слушатели?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -176,17 +280,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -194,17 +289,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 В какое время проводятся занятия?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>В какое время проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -212,17 +298,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 Обязательно ли наличие своего ноутбука?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Обязательно ли наличие своего ноутбука?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -230,17 +307,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            1 Кем можно работать после окончания курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>Кем можно работать после окончания курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
       </div>
@@ -251,17 +319,8 @@
             <div class="bars times"></div>
           </div>
           <div class="list-item__content">
-            2 Как проводятся занятия?
-            <p class="open">
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Как проводятся занятия?</h3>
+            <p class="open">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum rerum aliquid modi fuga earum dolorum harum quibusdam, officia unde placeat debitis ea magni quisquam cum numquam incidunt beatae! Repellendus delectus vero porro dolor amet doloremque minima nam numquam beatae doloribus provident rem dicta rerum voluptate ab architecto impedit ullam asperiores, iusto eum perferendis dignissimos similique. Voluptas sequi vero iste sint doloribus vitae voluptatem, iure at veniam eligendi. Dolorum numquam non minus velit veniam accusamus laudantium, quae voluptatem nihil vero minima reprehenderit exercitationem accusantium, earum amet beatae error. Quibusdam quas illo iusto laudantium saepe, ea totam consequatur velit dolores debitis doloribus voluptas excepturi necessitatibus molestias autem vero provident sint voluptatum eius ad cupiditate. Cupiditate facere veritatis magni iusto ipsum asperiores nisi eaque sint tempore earum amet sit tenetur facilis architecto perspiciatis consequuntur corporis, dolorum quae. Aspernatur aliquam saepe ut numquam.</p>
           </div>
         </div>
         <div class="list-item">
@@ -269,17 +328,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 Получают ли выпускники курсов документ об окончании?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Получают ли выпускники курсов документ об окончании?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -287,17 +337,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 Кто являются преподавателями курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Кто являются преподавателями курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -305,17 +346,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 Какие практические знания получают слушатели?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Какие практические знания получают слушатели?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -323,17 +355,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -341,17 +364,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 В какое время проводятся занятия?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 В какое время проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -359,17 +373,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 Обязательно ли наличие своего ноутбука?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Обязательно ли наличие своего ноутбука?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -377,17 +382,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            2 Кем можно работать после окончания курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>2 Кем можно работать после окончания курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
       </div>
@@ -398,17 +394,8 @@
             <div class="bars times"></div>
           </div>
           <div class="list-item__content">
-            3 Как проводятся занятия?
-            <p class="open">
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Как проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -416,17 +403,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 Получают ли выпускники курсов документ об окончании?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Получают ли выпускники курсов документ об окончании?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -434,17 +412,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 Кто являются преподавателями курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Кто являются преподавателями курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -452,17 +421,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 Какие практические знания получают слушатели?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Какие практические знания получают слушатели?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -470,17 +430,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -488,17 +439,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 В какое время проводятся занятия?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 В какое время проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -506,17 +448,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 Обязательно ли наличие своего ноутбука?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Обязательно ли наличие своего ноутбука?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -524,17 +457,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            3 Кем можно работать после окончания курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>3 Кем можно работать после окончания курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
       </div>
@@ -545,17 +469,8 @@
             <div class="bars times"></div>
           </div>
           <div class="list-item__content">
-            4 Как проводятся занятия?
-            <p class="open">
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Как проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -563,17 +478,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 Получают ли выпускники курсов документ об окончании?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Получают ли выпускники курсов документ об окончании?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -581,17 +487,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 Кто являются преподавателями курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Кто являются преподавателями курсов?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -599,17 +496,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 Какие практические знания получают слушатели?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Какие практические знания получают слушатели?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -617,17 +505,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Какими знаниями и навыками нужно обладать, чтобы учиться на курсах?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -635,17 +514,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 В какое время проводятся занятия?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 В какое время проводятся занятия?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -653,17 +523,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 Обязательно ли наличие своего ноутбука?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Обязательно ли наличие своего ноутбука?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
         <div class="list-item">
@@ -671,17 +532,8 @@
             <div class="bars"></div>
           </div>
           <div class="list-item__content">
-            4 Кем можно работать после окончания курсов?
-            <p>
-              Есть много вариантов Lorem Ipsum, но большинство из них
-              имеет не всегда приемлемые модификации, например, юмористические
-              вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-              какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
-              генераторы Lorem Ipsum используют один и тот же текст, который они просто
-              повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь
-              генератор единственным настоящим Lorem Ipsum генератором.
-            </p>
+            <h3>4 Обязательно ли наличие своего ноутбука?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur laudantium explicabo consectetur qui eligendi sed deleniti tempore itaque tenetur ipsum iusto sunt non assumenda adipisci cupiditate commodi delectus esse totam eos placeat earum, obcaecati quia dolore. Autem eligendi ullam libero iure delectus tenetur qui, accusamus expedita. Rerum dolor facilis, harum, ex quibusdam architecto impedit voluptatem assumenda id soluta, qui laborum suscipit. Impedit nam totam quisquam sequi quo tempora quam quasi laboriosam hic voluptas vel quaerat nesciunt atque iste provident debitis dolorem recusandae, dolores odit. Quisquam quas mollitia quidem quo optio exercitationem, sequi, hic et, delectus possimus blanditiis quae vel laboriosam eaque est esse iure accusamus ea error unde dignissimos asperiores corporis. Distinctio molestias sed, dolor velit adipisci est minima.</p>
           </div>
         </div>
       </div>
@@ -797,7 +649,10 @@
     </div>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/drop.js"></script>
     <script src="js/faq.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

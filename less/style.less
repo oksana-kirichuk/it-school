@@ -149,11 +149,12 @@ input[type="number"]::-webkit-inner-spin-button {
                 color: #fff;
                 cursor: pointer;
                 outline: none !important;
+                font-size: 16px;
 
                 option {
                     background: #fff;
                     color: #000;
-                    }
+                }
             }
         }
 
@@ -1752,7 +1753,7 @@ footer {
 			padding: 12px;
 			cursor: pointer;
 			border: solid 2px #e7e7e7;
-			transition: .3s;
+			transition: all .3s ease;
 
 			&.active {
 				background-color: #4b67b1;
@@ -1776,7 +1777,8 @@ footer {
 			}
 
 			&:hover {
-				background-color: #e7e7e7;
+                background-color: #e7e7e7;
+                color: #000;
 			}
 		}
 	}
@@ -1808,7 +1810,7 @@ footer {
 
 					.bars {
 						transition: .3s;
-						margin-top: 15px;
+						margin-top: 20px;
 						width: 16px;
 						height: 16px;
 						position: relative;
@@ -1827,7 +1829,15 @@ footer {
 							transform: rotate(90deg);
 						}
 					}
-				}
+                }
+                
+                .list-item__content {
+                    h3 {
+                        font-size: 18px;
+                        color: #4F4F4F;
+                    }
+                    
+                }
 
 				&.list-item-open {
 					.bars {
@@ -1843,16 +1853,23 @@ footer {
 					}
 
 
-					.list-item__content {}
+					.list-item__content {
+                        h3 {
+                            font-size: 18px;
+                            color: #4F4F4F;
+                        }
+                    }
 				}
 
 				.list-item__content {
 					padding: 15px;
 					padding-left: 0;
-					width: calc(80% - 80px);
-
+                    width: calc(80% - 80px);
+                    
 					p {
-						
+                        font-size: 16px;
+                        line-height: 170%;
+                        padding-top: 15px;
 					}
 				}
 			}

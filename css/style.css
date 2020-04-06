@@ -120,6 +120,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #fff;
   cursor: pointer;
   outline: none !important;
+  font-size: 16px;
 }
 .menu-fixed .menu-fixed-container .language select option {
   background: #fff;
@@ -1290,7 +1291,7 @@ footer .footer-container .footer-technologies .tech-items span {
   padding: 12px;
   cursor: pointer;
   border: solid 2px #e7e7e7;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 .faq-wrapper .tabs__switcher .tabs__switcher-button.active {
   background-color: #4b67b1;
@@ -1311,6 +1312,7 @@ footer .footer-container .footer-technologies .tech-items span {
 }
 .faq-wrapper .tabs__switcher .tabs__switcher-button:hover {
   background-color: #e7e7e7;
+  color: #000;
 }
 .faq-wrapper .tabs__container {
   margin: 30px 0 30px 0;
@@ -1338,7 +1340,7 @@ footer .footer-container .footer-technologies .tech-items span {
 }
 .faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars .bars {
   transition: 0.3s;
-  margin-top: 15px;
+  margin-top: 20px;
   width: 16px;
   height: 16px;
   position: relative;
@@ -1356,6 +1358,10 @@ footer .footer-container .footer-technologies .tech-items span {
 .faq-wrapper .tabs__container .tabs__content .list-item .list-item__bars .bars::after {
   transform: rotate(90deg);
 }
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__content h3 {
+  font-size: 18px;
+  color: #4F4F4F;
+}
 .faq-wrapper .tabs__container .tabs__content .list-item.list-item-open .bars {
   transform: rotate(45deg);
 }
@@ -1366,10 +1372,19 @@ footer .footer-container .footer-technologies .tech-items span {
   margin-top: 12px;
   height: auto;
 }
+.faq-wrapper .tabs__container .tabs__content .list-item.list-item-open .list-item__content h3 {
+  font-size: 18px;
+  color: #4F4F4F;
+}
 .faq-wrapper .tabs__container .tabs__content .list-item .list-item__content {
   padding: 15px;
   padding-left: 0;
   width: calc(80% - 80px);
+}
+.faq-wrapper .tabs__container .tabs__content .list-item .list-item__content p {
+  font-size: 16px;
+  line-height: 170%;
+  padding-top: 15px;
 }
 .list-item__content p {
   visibility: hidden;
