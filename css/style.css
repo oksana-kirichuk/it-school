@@ -253,28 +253,28 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   display: inline-block;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list {
+.courses-block-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item {
+.courses-block-list .course-block-item {
   margin-right: 20px;
   margin-bottom: 30px;
-  width: 25%;
+  width: 23%;
   box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay {
+.courses-block-list .course-block-item .course-block-item-overlay {
   position: relative;
   transition: all 0.2s ease;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay:hover {
+.courses-block-list .course-block-item .course-block-item-overlay:hover {
   transform: scale(1.04);
   box-shadow: 0 10px 30px rgba(21, 45, 83, 0.3);
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-overlay-click {
+.courses-block-list .course-block-item .course-block-item-overlay .course-overlay-click {
   position: absolute;
   display: block;
   top: 0;
@@ -283,10 +283,10 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 100%;
   z-index: 100;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .block-bg {
+.courses-block-list .course-block-item .course-block-item-overlay .block-bg {
   position: relative;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-block-bg {
+.courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-block-bg {
   height: 110px;
   width: 100%;
   padding-top: 50px;
@@ -294,13 +294,13 @@ input[type="number"]::-webkit-inner-spin-button {
   background-position: center;
   background-size: cover;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-logo {
+.courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-logo {
   position: absolute;
   z-index: 300;
   top: 70%;
   left: 7%;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-block-extra {
+.courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-block-extra {
   height: 50px;
   width: 100%;
   clip-path: polygon(0 44%, 100% 0%, 100% 63%, 0 65%);
@@ -309,45 +309,45 @@ input[type="number"]::-webkit-inner-spin-button {
   left: 0;
   z-index: 200;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-block-extra.block-light-blue {
+.courses-block-list .course-block-item .course-block-item-overlay .block-bg .course-block-extra.block-light-blue {
   background: #2B57B1;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content {
   padding: 50px 0 20px 20px;
   box-sizing: border-box;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content.block-light-blue {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content.block-light-blue {
   background: #2B57B1;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-title {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-title {
   margin-bottom: 40px;
   min-height: 60px;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-title h4 {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-title h4 {
   font-weight: 500;
   font-size: 24px;
   color: #fff;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date {
   display: flex;
   margin-bottom: 10px;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date .descr-icon {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date .descr-icon {
   margin-right: 10px;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date .descr-icon span {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date .descr-icon span {
   font-size: 16px;
   color: #fff;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date .course-text p {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-content .course-block-descr .course-date .course-text p {
   font-size: 16px;
   color: #fff;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-footer {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-footer {
   background: linear-gradient(136.81deg, #204194 7.54%, #1e3a86 65.37%);
   padding: 16px 22px;
 }
-.courses .courses-container .courses-content .courses-block .courses-block-list .course-block-item .course-block-item-overlay .course-block-footer p {
+.courses-block-list .course-block-item .course-block-item-overlay .course-block-footer p {
   font-weight: 500;
   font-size: 24px;
   color: #fff;
@@ -1038,9 +1038,6 @@ footer .footer-container .footer-technologies .tech-items span {
 .overview-container {
   padding-top: 80px;
 }
-.overview-container .overview {
-  padding-bottom: 150px;
-}
 .overview-container .overview .overview-cards {
   display: flex;
   width: 100%;
@@ -1457,6 +1454,7 @@ footer .footer-container .footer-technologies .tech-items span {
   line-height: 24px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .tabs__block .tabs__container .tabs__inner .tabs__inner_list .tabs__inner_item:last-child {
   margin-bottom: 0;
