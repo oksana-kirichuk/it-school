@@ -1022,13 +1022,13 @@ footer .footer-container .footer-technologies .tech-items span {
   background-color: #048f04 !important;
 }
 .form-input-invalid {
-  border-color: red!important;
+  border-color: #ff0000 !important;
   position: relative!important;
 }
 .form-input-invalid::after {
   content: 'Заполните это поле' !important;
   font-size: 14px!important;
-  color: red!important;
+  color: #ff0000 !important;
   position: absolute!important;
   top: 0px!important;
   left: 0px!important;
