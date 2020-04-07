@@ -17,19 +17,9 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
 	font-weight: normal;
 }
 
-
-// vars
+// vars and mixins for headlings
 
 @mainColor: #2B57B1;
-
-// wrapper
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-// mixins less
 
 .headling-second {
     font-weight: bold;
@@ -45,14 +35,44 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a {
     color: @mainColor;
 }
 
-// arrows
+// wrapper
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// reset styles for input type "number"
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-// main code
+// basic styles for container with headling <h2> 
+
+.basic-title-container {
+    margin-bottom: 40px;
+    
+    &::after {
+        content: '';
+        display: block;
+        width: 12%;
+        right: 0;
+        height: 6px;
+        background-color: @mainColor;;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+
+    .basic-h2 {
+        .headling-second;
+        margin: 80px 0 20px 0;
+    }
+}
+
+// **** main code ****
+
 // fixed menu
 
 .menu-fixed {
@@ -82,10 +102,6 @@ input[type="number"]::-webkit-inner-spin-button {
     
             .menu-logo-image {
                 margin-right: 15px;
-
-                img {
-    
-                }
             }
     
             .menu-logo-text {
@@ -275,6 +291,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+// section with courses
+
 .courses {
     .courses-container {
         .courses-links {
@@ -332,7 +350,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
-// cards items
+// global styles for course cards 
 
 .courses-block-list {
     display: flex;
@@ -458,6 +476,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+// school achievements section
+
 .honor-container {
     position: relative;
     overflow: hidden;
@@ -524,27 +544,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
-// basic h2 title 
-
-.basic-title-container {
-    margin-bottom: 40px;
-    
-    &::after {
-        content: '';
-        display: block;
-        width: 12%;
-        right: 0;
-        height: 6px;
-        background-color: @mainColor;;
-        margin-top: 4px;
-        cursor: pointer;
-    }
-
-    .basic-h2 {
-        .headling-second;
-        margin: 80px 0 20px 0;
-    }
-}
+// school benefits
 
 .advantages {
 
@@ -586,6 +586,8 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 }
+
+// container with reviews
 
 .reviews {
     padding-bottom: 150px;
@@ -657,6 +659,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+// partners section
+
 .partners {
     padding: 50px 0;
 
@@ -718,6 +722,8 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 }
+
+// footer
 
 footer {
     background: #2B57B1;
@@ -843,6 +849,8 @@ footer {
     }
 }
 
+// copyright
+
 .copyright {
     background: #3B4F83;
     padding: 8px 0;
@@ -858,7 +866,9 @@ footer {
     }
 }
 
-// course.html
+// styles for pages with course description
+
+// header 
 
 .course-header {
     background: linear-gradient(136.81deg, #3D589F 7.54%, #4B67B1 65.37%);
@@ -972,6 +982,8 @@ footer {
         }
     }
 }
+
+// course description course.html
 
 .about-course {
     padding: 80px 0;
@@ -1351,7 +1363,7 @@ footer {
     }
 }
 
-// form button styles
+// styles for buttons inside the form 
 
 .form-btn-send {
     background-color: @mainColor !important;
@@ -1384,7 +1396,6 @@ footer {
     padding-top: 80px;
 
     .overview {
-
         .overview-cards {
             display: flex;
             width: 100%;
@@ -1393,7 +1404,7 @@ footer {
     }
 }
 
-// accordeon
+// styles for accordeon
 
 .programm-course-container {
     padding: 60px 0;
@@ -1413,10 +1424,6 @@ footer {
                         color: #333;
                         padding-left: 16px;
                         padding-top: 24px;
-
-                        span {
-
-                        }
                     }
                 }
 
@@ -1496,6 +1503,8 @@ footer {
         }
     }
 }
+
+// styles for header with background
 
 .header-background {
     background-repeat: no-repeat;
@@ -1727,8 +1736,7 @@ footer {
     }
 }
 
-// FAQ
-
+// FAQ page accrodeon with tabs
 
 .faq-wrapper {
     margin: auto;
@@ -1875,7 +1883,7 @@ footer {
     margin: 0;
 }
 
-// dropdown
+// styles for dropdown
 
 .tabs__block {
     display: none;
@@ -1892,7 +1900,7 @@ footer {
     &.active {
         display: flex;
         z-index: 2000 !important;
-        box-shadow: -5px 3px 30px 4px rgba(0,0,0,0.36);
+        box-shadow: -5px 3px 30px 4px rgba(0, 0, 0, 0.36);
     }
 
     .tabs__courses {
@@ -1928,7 +1936,6 @@ footer {
           
                 &.active {
                     color: #3f51b5;
-                    // background: rgba($color: #3f51b5, $alpha: 0.2);
                 }
             }
         }

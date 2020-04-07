@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 			if(!listItem[i].classList.contains("list-item-open")) {
 				listItem.forEach((item, i) => {
-				item.classList.remove("list-item-open");
+					item.classList.remove("list-item-open");
 				});
 				listItem[i].classList.add("list-item-open");
 			} else {

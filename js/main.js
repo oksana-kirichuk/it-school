@@ -10,8 +10,6 @@ window.addEventListener('scroll', function() {
 	} else {
 		document.querySelector('.menu-fixed').classList.remove('menu-scroll');
 	}
-
-	console.log(offset);
 });
 
 
