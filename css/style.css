@@ -1405,6 +1405,7 @@ footer .footer-container .footer-technologies .tech-items span {
 }
 .tabs__block.active {
   display: flex;
+  z-index: 2000 !important;
 }
 .tabs__block .tabs__courses {
   padding: 40px 0 0 0;
