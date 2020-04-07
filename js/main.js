@@ -1,3 +1,21 @@
+
+// fixed menu scroll 
+
+window.addEventListener('scroll', function() {
+	
+	var offset = window.pageYOffset || document.documentElement.scrollTop;
+
+	if (offset > 10) {
+		document.querySelector('.menu-fixed').classList.add('menu-scroll');
+	} else {
+		document.querySelector('.menu-fixed').classList.remove('menu-scroll');
+	}
+
+	console.log(offset);
+});
+
+
+
 // Accordion 
 
 var accordion = (function () {
