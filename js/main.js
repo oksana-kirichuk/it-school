@@ -19,14 +19,14 @@ window.addEventListener('scroll', function() {
 var accordion = (function () {
 	return function (selector) {
 	var _mainElem = document.querySelector(selector),
-    	_items = _mainElem.querySelectorAll('.accordion__item');
+    	_items = _mainElem.querySelectorAll('.accordion-item');
 
   	for(var i = 0; i < _items.length; i++) {
    		 _items[i].addEventListener('click', function () {
 
-		if (_mainElem.querySelector('.accordion__item--open') && _mainElem.querySelector('.accordion__item--open') != this) {
-			_mainElem.querySelector('.accordion__item--open .accordion-content').style.maxHeight = null;
-			_mainElem.querySelector('.accordion__item--open').classList.remove('accordion__item--open');
+		if (_mainElem.querySelector('.accordion-item-open') && _mainElem.querySelector('.accordion-item-open') != this) {
+			_mainElem.querySelector('.accordion-item-open .accordion-content').style.maxHeight = null;
+			_mainElem.querySelector('.accordion-item-open').classList.remove('accordion-item-open');
 		}	
 
       	var itemContent = this.querySelector('.accordion-content');				
@@ -37,7 +37,7 @@ var accordion = (function () {
 			itemContent.style.maxHeight = itemContent.scrollHeight + "px";
 		}
 
-      	this.classList.toggle('accordion__item--open');
+      	this.classList.toggle('accordion-item-open');
     });
   }
   }
